@@ -1,0 +1,50 @@
+
+stages:
+- build
+
+win_build_10:
+ stage: build
+ tags:
+  - WIN10
+ script:
+ - mkdir build
+ - mkdir out
+ - cd build
+ - call go32
+ - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - nmake
+ - nmake install
+ - del /S /Q *
+ - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - nmake
+ - nmake install
+ artifacts:
+  expire_in: 1 week
+  paths:
+   - ttscmd/bin/
+   - ttscmd/lib/
+   - ttscmd/include/
+ 
+win_build_10_x64:
+ stage: build
+ tags:
+  - WIN10
+  - x64
+ script:
+ - mkdir build
+ - mkdir out
+ - cd build
+ - call go64
+ - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - nmake
+ - nmake install
+ - del /S /Q *
+ - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - nmake
+ - nmake install
+ artifacts:
+  expire_in: 1 week
+  paths:
+   - ttscmd/bin/
+   - ttscmd/lib/
+   - ttscmd/include/

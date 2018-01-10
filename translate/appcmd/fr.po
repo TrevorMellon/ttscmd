@@ -1,0 +1,940 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: clu@tron.rocks\n"
+"POT-Creation-Date: 2017-09-14 15:28+0100\n"
+"PO-Revision-Date: 2017-09-14 16:31+0100\n"
+"Last-Translator: Codified Likeness Utiltiy <clu@jno.io>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:88
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:98
+msgid "What would you like me to say?"
+msgstr "Que voulez-vous que je dire?"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:91
+msgid "Primary Options"
+msgstr "Optiones principale"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:93
+msgid "Display version information"
+msgstr "Information de version"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:94
+msgid "Show help information"
+msgstr "Informations d’aide"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:96
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:98
+msgid "Speak the following text"
+msgstr "Parler le texte suivant"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:102
+msgid "List Options"
+msgstr "Options de liste"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:104
+msgid "List voices installed on the system"
+msgstr "Voix de liste installées sur le système"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:105
+msgid "Use json output"
+msgstr "Utilisez la sortie json"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:115
+msgid "Search Options"
+msgstr "Options de recherche"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:117
+msgid "Based on age"
+msgstr "Basé sur l'âge"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:118
+msgid "Based on gender"
+msgstr "Basé sur le genre"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:119
+msgid "Based on language code"
+msgstr "Basé sur le code de langue"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:120
+msgid "Based on voice name"
+msgstr "Basé sur le nom de la voix"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:121
+msgid "Based on voice vendor"
+msgstr "Basé sur le fournisseur de voix"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:130
+msgid "Input/Output Options"
+msgstr "Options d'entrée/sortie"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:133
+msgid "Write to wav file instead of speakers"
+msgstr "Ecrire au fichier wav au lieu des haut-parleurs"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:210
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:238
+msgid "Voice\t\t: "
+msgstr "Voix\t\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:211
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:239
+msgid "Gender\t\t: "
+msgstr "Genre\t\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:212
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:240
+msgid "Age\t\t: "
+msgstr "Âge\t\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:213
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:241
+msgid "Vendor\t\t: "
+msgstr "Vendeur\t\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:214
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:242
+msgid "Language\t: "
+msgstr "La langue\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:215
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:243
+msgid "LangCode\t: "
+msgstr "Code de langue\t: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:257
+msgid "From Git rev: "
+msgstr "De la révision de Git: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:257
+msgid " on "
+msgstr " sur "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:257
+msgid " branch."
+msgstr " branche."
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:258
+msgid "Version : "
+msgstr "Version: "
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:289
+msgid "Failed to retrieve CLSID for COM server"
+msgstr "Impossible de récupérer CLSID pour le serveur COM"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/app/src/main.cpp:295
+msgid "Failed to start COM server"
+msgstr "Impossible de démarrer le serveur COM"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:61
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:193
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:62
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:194
+msgid "Albanian"
+msgstr "Albanais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:63
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:195
+msgid "Alsatian"
+msgstr "Alsacien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:64
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:196
+msgid "Amharic"
+msgstr "Amharique"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:65
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:197
+msgid "Arabic"
+msgstr "Arabe"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:66
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:198
+msgid "Armenian"
+msgstr "Arménien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:67
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:199
+msgid "Assamese"
+msgstr "Assamois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:68
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:200
+msgid "Azeri"
+msgstr "Azerbaïdjanais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:69
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:201
+msgid "Bangla"
+msgstr "Bangla"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:70
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:202
+msgid "Bashkir"
+msgstr "Bashkir"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:71
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:203
+msgid "Basque"
+msgstr "Basque"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:72
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:204
+msgid "Belarussian"
+msgstr "Biélorusse"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:73
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:205
+msgid "Bosnian"
+msgstr "Bosniaque"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:74
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:206
+msgid "Breton"
+msgstr "Breton"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:75
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:207
+msgid "Bulgarian"
+msgstr "Bulgare"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:76
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:208
+msgid "Kurdish Central"
+msgstr "Central kurde"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:77
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:209
+msgid "Cherokee"
+msgstr "Cherokee"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:78
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:210
+msgid "Catalan"
+msgstr "Catalan"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:79
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:211
+msgid "Chinese"
+msgstr "Chinois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:80
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:212
+msgid "Chinese Simplified"
+msgstr "Chinois simplifié"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:81
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:213
+msgid "Chinese Traditional"
+msgstr "Chinois traditionnel"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:82
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:214
+msgid "Corsican"
+msgstr "Corse"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:83
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:215
+msgid "Croatian"
+msgstr "Croate"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:84
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:216
+msgid "Czech"
+msgstr "Tchécoslovaque"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:85
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:217
+msgid "Danish"
+msgstr "Danois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:86
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:218
+msgid "Dari"
+msgstr "Dari"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:87
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:219
+msgid "Divehi"
+msgstr "Divehi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:88
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:220
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:89
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:221
+msgid "English"
+msgstr "Anglais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:90
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:222
+msgid "Estonian"
+msgstr "Estonien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:91
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:223
+#, fuzzy
+msgid "Faeroese"
+msgstr "Faeroese"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:92
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:224
+msgid "Filipino"
+msgstr "Philippin"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:93
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:225
+msgid "Finnish"
+msgstr "Finlandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:94
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:226
+msgid "French"
+msgstr "Français"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:95
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:227
+msgid "Frisian"
+msgstr "Frison"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:96
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:228
+msgid "Galacian"
+msgstr "Galacien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:97
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:229
+msgid "Georgian"
+msgstr "Géorgien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:98
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:230
+msgid "German"
+msgstr "Allemand"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:99
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:231
+msgid "Greek"
+msgstr "Grec"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:100
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:232
+msgid "Greenlandic"
+msgstr "Groenlandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:101
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:233
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:102
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:234
+msgid "Hausa"
+msgstr "Hausa"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:103
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:235
+msgid "Hawaiian"
+msgstr "Hawaïen"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:104
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:236
+msgid "Hebrew"
+msgstr "Hébreu"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:105
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:237
+msgid "Hindi"
+msgstr "Hindi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:106
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:238
+msgid "Hungarian"
+msgstr "Hongrois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:107
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:239
+msgid "Icelandic"
+msgstr "Islandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:108
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:240
+msgid "Igbo"
+msgstr "Igbo"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:109
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:241
+msgid "Indonesian"
+msgstr "Indonésien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:110
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:242
+msgid "Inuktitut"
+msgstr "Inuktitut"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:111
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:243
+msgid "Irish"
+msgstr "Irlandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:112
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:244
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:113
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:245
+msgid "Zulu"
+msgstr "Zoulou"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:114
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:246
+msgid "Italian"
+msgstr "Italien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:115
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:247
+msgid "Japanese"
+msgstr "Japonais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:116
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:248
+msgid "Kannada"
+msgstr "Kannada"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:117
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:249
+msgid "Kashmiri"
+msgstr "Kashmiri"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:118
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:250
+msgid "Kazak"
+msgstr "Kazak"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:119
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:251
+msgid "Khmer"
+msgstr "Khmer"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:120
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:252
+#, fuzzy
+msgid "Kiche"
+msgstr "Kiche"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:121
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:253
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:122
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:254
+msgid "Konkani"
+msgstr "Konkani"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:123
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:255
+msgid "Korean"
+msgstr "Coréen"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:124
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:256
+msgid "Kyrgyz"
+msgstr "Kyrgyz"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:125
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:257
+msgid "Lao"
+msgstr "Lao"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:126
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:258
+msgid "Latvian"
+msgstr "Letton"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:127
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:259
+msgid "Lithuanian"
+msgstr "Lituanien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:128
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:260
+msgid "Sorbian Lower"
+msgstr "Sorabé inférieur"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:129
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:261
+msgid "Luxembourgish"
+msgstr "Luxembourgeois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:130
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:262
+msgid "Macedonian"
+msgstr "Macédonien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:131
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:263
+msgid "Malay"
+msgstr "Malais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:132
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:264
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:133
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:265
+msgid "Maltese"
+msgstr "Maltais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:134
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:266
+msgid "Manipuri"
+msgstr "Manipuri"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:135
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:267
+msgid "Maori"
+msgstr "Maori"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:136
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:268
+#, fuzzy
+msgid "Mapudungun"
+msgstr "Mapudungun"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:137
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:269
+msgid "Marathi"
+msgstr "Marathi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:138
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:270
+msgid "Mohawk"
+msgstr "Mohawk"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:139
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:271
+msgid "Mongolian"
+msgstr "Mongol"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:140
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:272
+msgid "Nepali"
+msgstr "Népalais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:141
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:273
+msgid "Norwegian"
+msgstr "Norvégien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:142
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:274
+msgid "Occitan"
+msgstr "Occitan"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:143
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:275
+msgid "Oriya"
+msgstr "Oriya"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:144
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:276
+msgid "Pashto"
+msgstr "Pashto"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:145
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:277
+msgid "Persian"
+msgstr "Persan"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:146
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:278
+msgid "Polish"
+msgstr "Polonais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:147
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:279
+msgid "Portugeuse"
+msgstr "Portugais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:148
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:280
+msgid "Pular"
+msgstr "Pular"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:149
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:281
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:150
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:282
+msgid "Quechua"
+msgstr "Quechua"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:151
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:283
+msgid "Romanian"
+msgstr "Roumain"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:152
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:284
+msgid "Romansh"
+msgstr "Romanche"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:153
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:285
+msgid "Russian"
+msgstr "Russe"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:154
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:286
+msgid "Sakha"
+msgstr "Sakha"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:155
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:287
+msgid "Sami"
+msgstr "Sami"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:156
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:288
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:157
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:289
+msgid "Serbian"
+msgstr "Serbe"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:158
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:290
+msgid "Sotho"
+msgstr "Sotho"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:159
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:291
+msgid "Tswana"
+msgstr "Tswana"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:160
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:292
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:161
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:293
+msgid "Sinhalese"
+msgstr "Cinghalais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:162
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:294
+msgid "Slovak"
+msgstr "Slovaque"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:163
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:295
+msgid "Slovenian"
+msgstr "Slovène"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:164
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:296
+msgid "Spanish"
+msgstr "Espanol"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:165
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:297
+msgid "Swahili"
+msgstr "Swahili"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:166
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:298
+msgid "Swedish"
+msgstr "Suédois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:167
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:299
+msgid "Syriac"
+msgstr "Syriac"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:168
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:300
+msgid "Tajik"
+msgstr "Tadjik"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:169
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:301
+msgid "Tamazight"
+msgstr "Tamazight"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:170
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:302
+msgid "Tamil"
+msgstr "Tamil"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:171
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:303
+msgid "Tatar"
+msgstr "Tatar"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:172
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:304
+msgid "Telegu"
+msgstr "Telegu"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:173
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:305
+msgid "Thai"
+msgstr "Thaïlandais"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:174
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:306
+msgid "Tibetan"
+msgstr "Tibétain"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:175
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:307
+msgid "Tigrigna"
+msgstr "Tigrigna"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:176
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:308
+msgid "Turkish"
+msgstr "Turc"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:177
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:309
+msgid "Turkmen"
+msgstr "Turkmène"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:178
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:310
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:179
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:311
+msgid "Sorbian Upper"
+msgstr "Supérieur sorabe"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:180
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:312
+msgid "URDU"
+msgstr "Urdu"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:181
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:313
+msgid "Uighur"
+msgstr "Uighur"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:182
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:314
+msgid "Uzbek"
+msgstr "Ouzbek"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:183
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:315
+msgid "Valencian"
+msgstr "Valencienne"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:184
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:316
+msgid "Vietnamese"
+msgstr "Vietnamien"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:185
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:317
+msgid "Welsh"
+msgstr "Gallois"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:186
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:318
+msgid "Wolof"
+msgstr "Wolof"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:187
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:319
+msgid "Yi"
+msgstr "Yi"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:188
+#: S:/Users/CLU/Repo/mygit-gen/clutts/src/Voices.cpp:320
+msgid "Yoruba"
+msgstr "Yoruba"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:79
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:101
+msgid "Child"
+msgstr "Enfant"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:81
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:113
+msgid "Teenager"
+msgstr "Adolescent"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:83
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:119
+msgid "Adult"
+msgstr "Adulte"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:85
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:126
+msgid "Senior"
+msgstr "Sénior"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:97
+msgid "child"
+msgstr "enfant"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:98
+msgid "children"
+msgstr "enfants"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:99
+msgid "kid"
+msgstr "bébé"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:100
+msgid "kids"
+msgstr "bébés"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:102
+msgid "Children"
+msgstr "Enfants"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:103
+msgid "Kid"
+msgstr "Bébé"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:104
+msgid "Kids"
+msgstr "Bébé"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:107
+msgid "teen"
+msgstr "adolescent"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:108
+msgid "teens"
+msgstr "adolescents"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:109
+msgid "teenager"
+msgstr "adolescent"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:110
+msgid "teenagers"
+msgstr "adolescents"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:111
+msgid "Teen"
+msgstr "Adolescent"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:112
+msgid "Teens"
+msgstr "Adolescents"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:114
+msgid "Teenagers"
+msgstr "Adolescents"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:117
+msgid "adult"
+msgstr "adulte"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:118
+msgid "adults"
+msgstr "adultes"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:120
+msgid "Adults"
+msgstr "Adultes"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:123
+msgid "senior"
+msgstr "sénior"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:124
+msgid "seniors"
+msgstr "séniors"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:125
+msgid "old"
+msgstr "vieux"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:127
+msgid "Seniors"
+msgstr "Séniors"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:128
+msgid "Old"
+msgstr "Vieux"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:156
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:176
+msgid "Male"
+msgstr "Mâle"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:161
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:183
+msgid "Female"
+msgstr "Femelle"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:175
+msgid "male"
+msgstr "mâle"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:177
+msgid "males"
+msgstr "mâles"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:178
+msgid "Males"
+msgstr "Mâles"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:179
+msgctxt "gender"
+msgid "m"
+msgstr "m"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:182
+msgid "female"
+msgstr "femelle"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:184
+msgid "females"
+msgstr "femelles"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:185
+msgid "Females"
+msgstr "Femelles"
+
+#: S:/Users/CLU/Repo/mygit-gen/clutts/include/clu/tts/Voices.h:186
+msgctxt "gender"
+msgid "f"
+msgstr "f"
+
+#, fuzzy
+#~ msgid "gender"
+#~ msgid_plural "m"
+#~ msgstr[0] "enre\t\t: "
+#~ msgstr[1] "Genre\t\t: "

@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-14 09:37+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/src/main.cpp:70 app/src/main.cpp:80
+msgid "What would you like me to say?"
+msgstr ""
+
+#: app/src/main.cpp:73
+msgid "Primary Options"
+msgstr ""
+
+#: app/src/main.cpp:75
+msgid "Display version information"
+msgstr ""
+
+#: app/src/main.cpp:76
+msgid "Show help information"
+msgstr ""
+
+#: app/src/main.cpp:78 app/src/main.cpp:80
+msgid "Speak the following text"
+msgstr ""
+
+#: app/src/main.cpp:84
+msgid "List Options"
+msgstr ""
+
+#: app/src/main.cpp:86
+msgid "List voices installed on the system"
+msgstr ""
+
+#: app/src/main.cpp:87
+msgid "Use json output"
+msgstr ""
+
+#: app/src/main.cpp:97
+msgid "Search Options"
+msgstr ""
+
+#: app/src/main.cpp:99
+msgid "Based on age"
+msgstr ""
+
+#: app/src/main.cpp:100
+msgid "Based on gender"
+msgstr ""
+
+#: app/src/main.cpp:101
+msgid "Based on language code"
+msgstr ""
+
+#: app/src/main.cpp:102
+msgid "Based on voice name"
+msgstr ""
+
+#: app/src/main.cpp:103
+msgid "Based on voice vendor"
+msgstr ""
+
+#: app/src/main.cpp:112
+msgid "Input/Output Options"
+msgstr ""
+
+#: app/src/main.cpp:115
+msgid "Write to wav file instead of speakers"
+msgstr ""
+
+#: app/src/main.cpp:192 app/src/main.cpp:220
+msgid "Voice\t\t: "
+msgstr ""
+
+#: app/src/main.cpp:193 app/src/main.cpp:221
+msgid "Gender\t\t: "
+msgstr ""
+
+#: app/src/main.cpp:194 app/src/main.cpp:222
+msgid "Age\t\t: "
+msgstr ""
+
+#: app/src/main.cpp:195 app/src/main.cpp:223
+msgid "Vendor\t\t: "
+msgstr ""
+
+#: app/src/main.cpp:196 app/src/main.cpp:224
+msgid "Language\t: "
+msgstr ""
+
+#: app/src/main.cpp:197 app/src/main.cpp:225
+msgid "LangCode\t: "
+msgstr ""
+
+#: app/src/main.cpp:239
+msgid "From Git rev: "
+msgstr ""
+
+#: app/src/main.cpp:239
+msgid " on "
+msgstr ""
+
+#: app/src/main.cpp:239
+msgid " branch."
+msgstr ""
+
+#: app/src/main.cpp:240
+msgid "Version : "
+msgstr ""
+
+#: app/src/main.cpp:271
+msgid "Failed to retrieve CLSID for COM server"
+msgstr ""
+
+#: app/src/main.cpp:277
+msgid "Failed to start COM server"
+msgstr ""
