@@ -12,8 +12,8 @@ only_commits:
 
 build_script:
  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
- - include=%BOOST_ROOT%\include;%include%
- - lib=%BOOST_LIBRARYDIR%;%lib%
+ - cmd: SET include=%BOOST_ROOT%\include;%include%
+ - cmd: SET lib=%BOOST_LIBRARYDIR%;%lib%
  - cmd: mkdir ttscmd
  - cmd: mkdir build
  - cmd: cd build
