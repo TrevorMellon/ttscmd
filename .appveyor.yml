@@ -4,6 +4,7 @@ only_commits:
  message: /build/
 
 build_script:
+ - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
  - cmd: mkdir ttscmd
  - cmd: mkdir build
  - cmd: cd build
