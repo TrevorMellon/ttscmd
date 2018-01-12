@@ -1,9 +1,25 @@
-    
+version: 1.0.{build}
+
+only_commits:
+ message: /build/
+
 build_script:
-    - cmd
-    - mkdir ttscmd
-    - mkdir build
-    - cd build
-    - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
-    - nmake
-    - nmake install
+ - cmd: mkdir ttscmd
+ - cmd: mkdir build
+ - cmd: cd build
+ - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - cmd: nmake
+ - cmd: nmake install
+ 
+deploy:
+  release: ttscmd-v$(appveyor_build_version)
+  description: 'TTS command line app'
+  provider: GitHub
+  auth_token:
+    secure: Xco8oPvJtHjFpMBk9cRFQ4hK/OC79n0XEuPe1O2va6Aa/v474AbcuIhrmMnPQbbc # your encrypted token from GitHub
+  artifact: /.*ttscmd/            # upload all NuGet packages to release assets
+  draft: false
+  prerelease: false
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
