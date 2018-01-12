@@ -1,9 +1,9 @@
     
 build_script:
-    cmd
-    mkdir ttscmd
-    mkdir build
-    cd build
-    cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
-    nmake
-    nmake install
+    - cmd
+    - mkdir ttscmd
+    - mkdir build
+    - cd build
+    - cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+    - nmake
+    - nmake install
