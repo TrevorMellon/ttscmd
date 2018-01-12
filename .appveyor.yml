@@ -5,7 +5,7 @@ only_commits:
 
 build_script:
  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
- - cmd: PATH=C:\Libraries\boost_1_65_1;%PATH%
+ - cmd: PATH=C:\Libraries\boost_1_63_0;%PATH%
  - cmd: mkdir ttscmd
  - cmd: mkdir build
  - cmd: cd build
