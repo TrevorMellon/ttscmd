@@ -1,3 +1,10 @@
+os: Visual Studio 2015
+platform: x86
+
+environment:
+ - BOOST_ROOT: C:\Libraries\boost_1_63_0
+ - BOOST_LIBRARYDIR: C:\Libraries\boost_1_63_0\lib32-msvc-14.0
+
 version: 1.0.{build}
 
 only_commits:
@@ -5,7 +12,6 @@ only_commits:
 
 build_script:
  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
- - cmd: PATH=C:\Libraries\boost_1_63_0;%PATH%
  - cmd: mkdir ttscmd
  - cmd: mkdir build
  - cmd: cd build
