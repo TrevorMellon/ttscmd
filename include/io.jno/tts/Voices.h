@@ -9,8 +9,8 @@
 ******************************************************/
 
 
-#ifndef IO_JNO_VOICES_H
-#define IO_JNO_VOICES_H
+#ifndef TTSCMD_VOICES_H
+#define TTSCMD_VOICES_H
 
 #include <windows.h>
 
@@ -251,4 +251,4 @@ namespace io_jno
 
 	}
 }
-#endif // IO_JNO_VOICES_H
+#endif // TTSCMD_VOICES_H

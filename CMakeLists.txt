@@ -38,7 +38,7 @@ include (cmake/git.cmake)
 
 configure_file(
   ${PROJECT_SOURCE_DIR}/template/Version.h.in
-  ${PROJECT_SOURCE_DIR}/include/clu/tts/Version.h
+  ${PROJECT_SOURCE_DIR}/include/io.jno/tts/Version.h
 )
 
 set( APPCMDA ${TTS_APP_NAME}a )

@@ -8,8 +8,8 @@
 *                                                    *
 ******************************************************/
 
-#ifndef __CLU_s_TTS_UNICODE__H_
-#define __CLU_s_TTS_UNICODE__H_
+#ifndef TTSCMD_TTS_UNICODE__H_
+#define TTSCMD_TTS_UNICODE__H_
 
 #include <string>
 #include <sstream>
@@ -31,4 +31,4 @@ namespace io_jno
 	}
 }
 
-#endif
+#endif 

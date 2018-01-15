@@ -8,8 +8,8 @@
 *                                                    *
 ******************************************************/
 
-#ifndef __CLU_s_EXPORT__H_
-#define __CLU_s_EXPORT__H_
+#ifndef TTSCMD_EXPORT__H
+#define TTSCMD_EXPORT__H
 
 #if defined(_WIN32) || defined(_WINDOWS)
 #	if defined(CLU_TTS_BUILDING_DLL)
@@ -23,4 +23,4 @@
 #		define CLU_s_TTS_EXPORT
 #endif
 
-#endif//__CLU_s_EXPORT__H_
+#endif//TTSCMD_EXPORT__H
