@@ -30,10 +30,10 @@ build_script:
  - ps: if(!(Test-Path -Path $path )){$client.DownloadFile("$env:BOOST_URL", "$pwd\boost.zip") }
  - ps: Expand-Archive "icu.zip" "."
  - ps: Expand-Archive "boost.zip" "."
- - ps: $BOOST_ROOT=$PWD\boost
- - ps: $ICU_ROOT=$PWD\icu
- - ps: $env:include=$BOOST_ROOT\include;$ICU_ROOT\include;$env:include
- - ps: $env:lib=$BOOST_ROOT\lib;$ICU_ROOT\lib;$env:lib
+ - ps: $env:BOOST_ROOT="$PWD\boost"
+ - ps: $env:ICU_ROOT="$PWD\icu"
+ - ps: $env:include="$env:BOOST_ROOT\include;$env:ICU_ROOT\include;$env:include"
+ - ps: $env:lib="$env:BOOST_ROOT\lib;$env:ICU_ROOT\lib;$env:lib"
  - cmd: echo %include%
  - cmd: echo %lib%
  - cmd: cd ..
