@@ -13,15 +13,11 @@ version: 1.0.{build}
 
 only_commits:
  message: /build/
- 
-cache:
- - sdk -> .appveyor.yml
 
 build_script:
  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
  - cmd: mkdir ttscmd
  - cmd: mkdir build
- - cmd: mkdir sdk
  - cmd: cd sdk
  - cmd: set lib=%BOOST_LIBRARYDIR%;%lib%
  - cmd: cd ..
