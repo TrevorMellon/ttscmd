@@ -24,6 +24,7 @@ build_script:
  - cmd: cd sdk
  - ps: $client = new-object System.Net.WebClient
  - ps: $path = "$PWD\icu.zip" 
+ - ps: Write-Host "$ICU_URL"
  - ps: $client.DownloadFile("$ICU_URL", "$pwd\icu.zip")
  - ps: $path = "$PWD\boost.zip"
  - ps: $client.DownloadFile("$BOOST_URL", "$pwd\boost.zip")
