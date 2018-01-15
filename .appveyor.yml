@@ -13,7 +13,7 @@ version: 1.0.{build}
 only_commits:
  message: /build/
  
- cache:
+cache:
   - sdk -> .appveyor.yml
 
 build_script:
