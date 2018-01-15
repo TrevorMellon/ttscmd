@@ -11,8 +11,8 @@ SET( inc
 
 
 SET(Boost_USE_STATIC_LIBS   ON)
-find_package(Boost COMPONENTS locale)
-find_package(ICU REQUIRED uc data i18n)
+find_package(Boost REQUIRED COMPONENTS locale)
+find_package(ICU  uc data i18n)
 
 if(Boost_FOUND)
 	add_definitions(-DUSING_BOOST)
