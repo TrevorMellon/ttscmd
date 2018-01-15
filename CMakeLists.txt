@@ -14,6 +14,9 @@ cmake_minimum_required (VERSION 2.8)
 set( VENDOR jno.io )
 project (ttscmd)
 
+option(BUILD_UNICODE ON)
+option(BUILD_DLL OFF)
+
 SET(CMAKE_COLOR_MAKEFILE ON)
 
 SET (TTS_MAJOR_VERSION 1)
