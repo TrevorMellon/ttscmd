@@ -5,7 +5,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 SET(Boost_USE_STATIC_LIBS   ON)
 find_package(Boost COMPONENTS program_options locale system thread)
-find_package(ICU COMPONENTS uc data i18n)
+find_package(ICU OPTIONAL_COMPONENTS uc data i18n)
 
 if(Boost_FOUND)
 	add_definitions(-DUSING_BOOST)
