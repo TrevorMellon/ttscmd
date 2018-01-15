@@ -24,10 +24,10 @@ build_script:
  - cmd: cd sdk
  - ps: $client = new-object System.Net.WebClient
  - ps: $path = "$PWD\icu.zip" 
- - ps: Write-Host "$ICU_URL"
- - ps: $client.DownloadFile("$ICU_URL", "$pwd\icu.zip")
+ - ps: Write-Host "$env:ICU_URL"
+ - ps: $client.DownloadFile("$env:ICU_URL", "$pwd\icu.zip")
  - ps: $path = "$PWD\boost.zip"
- - ps: $client.DownloadFile("$BOOST_URL", "$pwd\boost.zip")
+ - ps: $client.DownloadFile("$env:BOOST_URL", "$pwd\boost.zip")
  - ps: Expand-Archive "icu.zip" "."
  - ps: Expand-Archive "boost.zip" "."
  - cmd: SET BOOST_ROOT=%PWD%\boost
