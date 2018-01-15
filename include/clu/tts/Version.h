@@ -1,12 +1,12 @@
 #ifndef CLU_s_TTS_VERSION_H__
 #define CLU_s_TTS_VERSION_H__
 
-#define CLU_s_APPLICATION_NAME ""
-#define CLU_s_TTS_GIT_BRANCH "master"
-#define CLU_s_TTS_GIT_COMMIT_HASH "e78ed5d"
-#define CLU_s_TTS_MAJOR_VERSION 
-#define CLU_s_TTS_MINOR_VERSION 
-#define CLU_s_TTS_GIT_REV_COUNT 35
-#define CLU_s_TTS_VERSION "..35"
+#define TTSCMD_APPLICATION_NAME "ttscmd"
+#define TTSCMD_GIT_BRANCH "master"
+#define TTSCMD_GIT_COMMIT_HASH "4d784e5"
+#define TTSCMD_MAJOR_VERSION 1
+#define TTSCMD_MINOR_VERSION 0
+#define CLU_GIT_REV_COUNT 14
+#define TTSCMD_VERSION "1.0.14"
 
 #endif //CLU_s_TTS_VERSION_H__
