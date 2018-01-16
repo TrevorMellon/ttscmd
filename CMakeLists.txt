@@ -66,7 +66,7 @@ if(WIN32)
 endif(WIN32)
 
 FILE( GLOB HDRS
-	${PROJECT_SOURCE_DIR}/include/ttscmd/*
+	${PROJECT_SOURCE_DIR}/include/io.jno/tts/*
 )
 
 add_subdirectory(library)
@@ -75,7 +75,7 @@ add_subdirectory(app)
 include(cmake/translate.cmake)
 
 install(FILES ${HDRS}
-	 DESTINATION include/ttscmd/
+	 DESTINATION include/io.jno/tts
 )
 
 
