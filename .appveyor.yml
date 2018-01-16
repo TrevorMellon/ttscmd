@@ -16,9 +16,10 @@ build_script:
  - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
  - cmd: nmake
  - cmd: nmake install
+ - cmd: cd ..
  
 artifacts:
-  - path: ttscmd/**
+  - path: ttscmd
     name: ttscmd
     type: zip 
  
