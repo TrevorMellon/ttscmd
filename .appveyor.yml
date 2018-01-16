@@ -23,7 +23,10 @@ deploy:
   provider: GitHub
   auth_token:
     secure: Xco8oPvJtHjFpMBk9cRFQ4hK/OC79n0XEuPe1O2va6Aa/v474AbcuIhrmMnPQbbc # your encrypted token from GitHub
-  artifact: /ttscmd/**            
+  artifacts:
+   - path: ttscmd/**
+     name: ttscmd
+     type: zip     
   draft: true
   prerelease: false
   on:
