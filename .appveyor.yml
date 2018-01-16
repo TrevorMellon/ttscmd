@@ -13,7 +13,7 @@ build_script:
  - cmd: mkdir build
  - cmd: set lib=%BOOST_LIBRARYDIR%;%lib%
  - cmd: cd build
- - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd ..
+ - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd -DBUILD_WITH_MT=ON -DBUILD_UNICODE=ON -DBUILD_DLL=ON ..
  - cmd: nmake
  - cmd: nmake install
  - cmd: cd ..
