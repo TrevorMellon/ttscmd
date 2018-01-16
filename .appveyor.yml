@@ -30,7 +30,7 @@ deploy:
   provider: GitHub
   auth_token:
     secure: Xco8oPvJtHjFpMBk9cRFQ4hK/OC79n0XEuPe1O2va6Aa/v474AbcuIhrmMnPQbbc # your encrypted token from GitHub
-  artifact: /ttscmd/.*            # upload all NuGet packages to release assets
+  artifact: /ttscmd/**            
   draft: false
   prerelease: false
   on:
