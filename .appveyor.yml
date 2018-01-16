@@ -17,16 +17,18 @@ build_script:
  - cmd: nmake
  - cmd: nmake install
  
+artifacts:
+  - path: ttscmd/**
+    name: ttscmd
+    type: zip 
+ 
 deploy:
   release: ttscmd-v$(appveyor_build_version)
   description: 'TTS command line app'
   provider: GitHub
   auth_token:
     secure: Xco8oPvJtHjFpMBk9cRFQ4hK/OC79n0XEuPe1O2va6Aa/v474AbcuIhrmMnPQbbc # your encrypted token from GitHub
-  artifacts:
-   - path: ttscmd/**
-     name: ttscmd
-     type: zip     
+      
   draft: true
   prerelease: false
   on:
