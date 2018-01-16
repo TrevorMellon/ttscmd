@@ -4,10 +4,6 @@ platform: x86
 environment:
  BOOST_ROOT: C:\Libraries\boost_1_63_0
  BOOST_LIBRARYDIR: C:\Libraries\boost_1_63_0\lib32-msvc-14.0
- ICU_URL: 
-  secure: 4xmu+DdVKnFWK/zs5sdwDb0ewFjeV1cGrubA/KVF5vjTvpWfvNGRKTWNwXCmVN4zHeQePiH5cr2x35hMmTt+3A==
- BOOST_URL: 
-  secure: 4xmu+DdVKnFWK/zs5sdwDb0ewFjeV1cGrubA/KVF5vhTz96UWrDXdz21PoyggI3HgH/iF6O95wTTfpqKUbF2Ew==
 
 version: 1.0.{build}
 
