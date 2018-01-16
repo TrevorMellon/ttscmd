@@ -282,9 +282,9 @@ int main(int argc, char* argv[])
 	}
 	else if (vm.count("version"))
 	{
-		std::cout << lo::translate(CLU_s_APPLICATION_NAME) << std::endl << std::endl;
-		std::cout << lo::translate("From Git rev: ") << CLU_s_TTS_GIT_COMMIT_HASH << lo::translate(" on ") << CLU_s_TTS_GIT_BRANCH << lo::translate(" branch.") << std::endl;
-		std::cout << lo::translate("Version : ") << CLU_s_TTS_VERSION;
+		std::cout << lo::translate(TTSCMD_APPLICATION_NAME) << std::endl << std::endl;
+		std::cout << lo::translate("From Git rev: ") << TTSCMD_GIT_COMMIT_HASH << lo::translate(" on ") << TTSCMD_GIT_BRANCH << lo::translate(" branch.") << std::endl;
+		std::cout << lo::translate("Version : ") << TTSCMD_VERSION;
 #ifdef UNICODE
 		std::cout << " (Unicode)";
 #else

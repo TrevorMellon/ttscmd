@@ -17,6 +17,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 
 #include <io.jno/tts/Voices.h>
+#include <io.jno/tts/Version.h>
 
 #include <windows.h>
 #include <tchar.h>
@@ -44,8 +45,6 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 #include <codecvt>
 #include <locale>
-
-#include <clu/tts/Version.h>
 
 using namespace io_jno;
 using namespace io_jno::tts;
@@ -2068,8 +2067,8 @@ tts::string VoicesK::json(const Voices &v)
 	rj::Document::AllocatorType &alloc = d.GetAllocator();
 
 	header.AddMember("Voice-Number", v.size(), alloc);
-	header.AddMember("Writing-Application", rj::Value(CLU_s_APPLICATION_NAME, alloc), alloc);
-	header.AddMember("Application-Version", rj::Value(CLU_s_TTS_VERSION, alloc), alloc);
+	header.AddMember("Writing-Application", rj::Value(TTSCMD_APPLICATION_NAME, alloc), alloc);
+	header.AddMember("Application-Version", rj::Value(TTSCMD_VERSION, alloc), alloc);
 
 	d.AddMember("header",header, alloc);
 
