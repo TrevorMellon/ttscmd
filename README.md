@@ -1,7 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/94cwfhgotu1a053h?svg=true)](https://ci.appveyor.com/project/TrevorMellon/ttscmd)
 
 # ttscmd
-Microsoft SAPI Interface for enumerating voice tokens and companion command line TTS app. 
+Microsoft SAPI Interface for enumerating voice tokens and companion command line text-to-speech (TTS) app. 
 Fuzzy evaluation for age, gender, name so as to get the closest voice possible.
 
 # Commandline Options
