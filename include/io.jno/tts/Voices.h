@@ -230,7 +230,7 @@ namespace io_jno
 
 		class VoicesKPrivate;
 
-		class CLU_s_TTS_EXPORT VoicesK
+		class TTS_EXPORT VoicesK
 		{
 		public:
 			VoicesK();
