@@ -30,3 +30,5 @@ _ReSharper*/
 
 vs/**
 b/**
+
+include/io.jno/tts/Version.h

@@ -16,7 +16,7 @@ before_build:
  - cmd: mkdir sdk
  - cmd: mkdir build
  - cmd: cd sdk
- - cmd: SET RJPATH=%PWD%\rapidjson
+ - cmd: SET RJPATH=%CD%\rapidjson
  - cmd: git clone %RAPIDJSON_URL%
  - cmd: SET include=%RJPATH%\include;%include%
  - cmd: cd ..
