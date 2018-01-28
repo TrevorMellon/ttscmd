@@ -16,18 +16,11 @@ before_build:
  - cmd: mkdir sdk
  - cmd: mkdir build
  - cmd: cd sdk
- - cmd: SET RJPATH=%PWD%
- - cmd: cd ..
- - cmd: cd build
+ - cmd: SET RJPATH=%PWD%\rapidjson
  - cmd: git clone %RAPIDJSON_URL%
  - cmd: cd rapidjson
- - cmd: cmake -DCMAKE_INSTALL_PREFIX=%RJPATH% -DCMAKE_BUILD_TYPE=Release .
- - cmd: nmake
- - cmd: nmake install
  - cmd: SET include=%RJPATH%\include;%include%
- - cmd: del /S /Q *
  - cmd: cd ..
- - cmd: rmdir rapidjson
  - cmd: mkdir ttscmd
  - cmd: set lib=%BOOST_LIBRARYDIR%;%lib%
 
