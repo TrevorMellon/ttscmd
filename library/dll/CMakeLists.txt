@@ -3,7 +3,7 @@ message(STATUS "${DLLA} (Ascii)")
 
 include(../common/common.cmake)
 
-add_definitions(-DCLU_TTS_BUILDING_DLL)
+add_definitions(-DTTS_BUILDING_DLL)
 
 add_library(${DLLA} SHARED ${srcs} ${inc})
 target_link_libraries(${DLLA} ${Boost_LIBRARIES} ${ICU_LIBRARIES})

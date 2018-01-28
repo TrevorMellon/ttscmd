@@ -12,15 +12,15 @@
 #define TTSCMD_EXPORT__H
 
 #if defined(_WIN32) || defined(_WINDOWS)
-#	if defined(CLU_TTS_BUILDING_DLL)
-#		define CLU_s_TTS_EXPORT __declspec(dllexport)
-#	elif defined(USING_CLU_s_TTS_DLL)
-#		define CLU_s_TTS_EXPORT __declspec(dllimport)
+#	if defined(TTS_BUILDING_DLL)
+#		define TTS_EXPORT __declspec(dllexport)
+#	elif defined(USING_TTS_DLL)
+#		define TTS_EXPORT __declspec(dllimport)
 #	else
-#		define CLU_s_TTS_EXPORT
+#		define TTS_EXPORT
 #	endif
 #else
-#		define CLU_s_TTS_EXPORT
+#		define TTS_EXPORT
 #endif
 
 #endif//TTSCMD_EXPORT__H
