@@ -18,7 +18,6 @@ before_build:
  - cmd: cd sdk
  - cmd: SET RJPATH=%PWD%\rapidjson
  - cmd: git clone %RAPIDJSON_URL%
- - cmd: cd rapidjson
  - cmd: SET include=%RJPATH%\include;%include%
  - cmd: cd ..
  - cmd: mkdir ttscmd
