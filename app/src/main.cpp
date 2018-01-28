@@ -67,8 +67,8 @@ int main(int argc, char* argv[])
 #if UNICODE
 	boost::filesystem::path p("../share/locale/");
 
-	std::cout << "Using Translation path:" << std::endl;
-	std::cout << p << std::endl;
+	//std::cout << "Using Translation path:" << std::endl;
+	//std::cout << p << std::endl;
 
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("clutts");
