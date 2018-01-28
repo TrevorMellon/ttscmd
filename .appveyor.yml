@@ -4,14 +4,33 @@ platform: x86
 environment:
  BOOST_ROOT: C:\Libraries\boost_1_63_0
  BOOST_LIBRARYDIR: C:\Libraries\boost_1_63_0\lib32-msvc-14.0
+ RAPIDJSON_URL: https://github.com/Tencent/rapidjson.git
 
 version: 1.0.{build}
 
-build_script:
+only_commits:
+  message: /build/
+
+before_build:
  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
- - cmd: mkdir ttscmd
+ - cmd: mkdir sdk
  - cmd: mkdir build
+ - cmd: cd sdk
+ - cmd: SET RJPATH=%PWD%
+ - cmd: cd ..
+ - cmd: cd build
+ - cmd: git clone %RAPIDJSON_URL%
+ - cmd: cd rapidjson
+ - cmd: cmake -DCMAKE_INSTALL_PREFIX=%RJPATH% -DCMAKE_BUILD_TYPE=Release .
+ - cmd: nmake install
+ - cmd: SET include=%RJPATH%\include;%include%
+ - cmd: del /S /Q *
+ - cmd: cd ..
+ - cmd: rmdir rapidjson
+ - cmd: mkdir ttscmd
  - cmd: set lib=%BOOST_LIBRARYDIR%;%lib%
+
+build_script:
  - cmd: cd build
  - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd -DBUILD_UNICODE=ON -DBUILD_DLL=ON ..
  - cmd: nmake
