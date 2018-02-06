@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 	//std::cout << p << std::endl;
 
 	gen.add_messages_path(p.string());
-	gen.add_messages_domain("clutts");
+	gen.add_messages_domain("ttscmd");
 
 	//std::locale fr = gen("fr_FR.UTF-8");
 	std::locale fr = sysloc;
@@ -79,6 +79,8 @@ int main(int argc, char* argv[])
 	std::wcout.imbue(fr);
 	std::cout.imbue(fr);
 #endif
+	std::string locstr;
+
 	tts::VoicesK v;
 
 	tts::VoiceZ vz;
@@ -108,11 +110,7 @@ int main(int argc, char* argv[])
 		("list,l", lo::translate("List voices installed on the system").str().c_str())
 		("json,j", lo::translate("Use json output").str().c_str())
 		("jsonfile,f", po::value<std::string>(&jsonfile), lo::translate("Write json to file").str().c_str())
-		//("listages,la", "List and indexes of voice ages")
-		//("listnames,ln", "List and indexes of voice names")
-		//("listvendors,lv", "List and index of voice vendors")
-		//("listgenders,lg", "List and index of voice genders")
-		//("listlanguages,ll", "List and indexes of voice languages")
+		("locale", po::value<std::string>(&locstr), lo::translate("Use the included locale instead of system").str().c_str())
 		;
 
 	std::string sa, sg, sl, sn, sv;
@@ -153,14 +151,29 @@ int main(int argc, char* argv[])
 		exit(1);
 	}
 	
+	if (vm.count(lo::translate("locale")))
+	{
+		locstr = vm["locale"].as<std::string>();
 
-	
-	
-	//else if ()
-	
+#if _DEBUG
+		std::cout << "found locale: " << locstr << std::endl;
+#endif
 
-	if (vm.count("age") || vm.count("gend") || vm.count("lang")
-		|| vm.count("name") || vm.count("vend"))
+		std::stringstream locss;
+		locss << locstr << ".UTF-8";
+
+		std::locale loc = gen(locss.str());
+
+		std::locale::global(loc);
+		std::wcout.imbue(loc);
+		std::cout.imbue(loc);
+	}
+
+	if (vm.count("age") ||
+		vm.count("gend") ||
+		vm.count("lang") ||
+		vm.count("name") ||
+		vm.count("vend"))
 	{
 		tts::VoiceAttributesZ vatt;
 		vatt.zero();
