@@ -69,8 +69,7 @@ FILE( GLOB HDRS
 	${PROJECT_SOURCE_DIR}/include/io.jno/tts/*
 )
 
-#add_subdirectory(library)
-include(library/library.cmake)
+add_subdirectory(library)
 add_subdirectory(app)
 
 include(cmake/translate.cmake)

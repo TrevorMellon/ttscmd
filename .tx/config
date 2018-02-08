@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[ttscmd.appcmdpot]
+file_filter = translate/ttscmd/<lang>.po
+source_lang = en
+type = PO
+

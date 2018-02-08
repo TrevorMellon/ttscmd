@@ -11,74 +11,69 @@
 #
 
 message(STATUS "")
+message(STATUS "Translations")
+message(STATUS "============")
 
 
-find_program(XGETTEXT xgettext)
-message(${XGETTEXT})
+SET(ARG1
+	"\"src\" -iname \"*.cpp\" > \"libclutts.list\""
+)
 
-if(XGETTEXT)
+file(GLOB LIBFILES src/*.cpp include/clu/tts/*.h)
 
-	message(STATUS "Translations")
-	message(STATUS "============")
+file(GLOB APPFILES app/src/*.cpp)
+
+
+
+execute_process(
+	COMMAND xgettext --keyword=translate:1,1t --keyword=translate:1c,2,2t --keyword=translate:1,2,3t --keyword=translate:1c,2,3,4t -C -o appcmd.pot --package-name=ttscmd-1.0 --msgid-bugs-address=t@jno.io ${APPFILES} ${LIBFILES}
+	COMMAND xgettext --keyword=translate:1,1t --keyword=translate:1c,2,2t --keyword=translate:1,2,3t --keyword=translate:1c,2,3,4t -C -o dll.pot --package-name=ttscmd1-1.0 --msgid-bugs-address=t@jno.io ${LIBFILES}
+)
+
+file(GLOB TRANSAPP translate/ttscmd/*.po)
+
+SET(TRANSAPPOUTDIR ${CMAKE_BINARY_DIR}/bin/translate/ttscmd/)
+
+file(MAKE_DIRECTORY ${TRANSAPPOUTDIR})
+
+foreach(TRANSX ${TRANSAPP})
 	
-	SET(ARG1
-		"\"src\" -iname \"*.cpp\" > \"libclutts.list\""
+	get_filename_component(T ${TRANSX} NAME_WE)
+	
+	
+	SET(COMPILETRANSFILE
+		${TRANSAPPOUTDIR}${T}.mo
 	)
-
-	file(GLOB LIBFILES src/*.cpp include/clu/tts/*.h)
-
-	file(GLOB APPFILES app/src/*.cpp)
-
-
-
+	#message(STATUS ${TRANSX})
+	message(STATUS "Found app translation for language ${T}")
+	message(STATUS "Creating translation: ")
+	message(STATUS ${COMPILETRANSFILE})
+	
 	execute_process(
-		COMMAND xgettext --keyword=translate:1,1t --keyword=translate:1c,2,2t --keyword=translate:1,2,3t --keyword=translate:1c,2,3,4t -C -o appcmd.pot --package-name=ttscmd --msgid-bugs-address=t@jno.io ${APPFILES} ${LIBFILES}
-		COMMAND xgettext --keyword=translate:1,1t --keyword=translate:1c,2,2t --keyword=translate:1,2,3t --keyword=translate:1c,2,3,4t -C -o dll.pot --package-name=ttscmd1ib --msgid-bugs-address=t@jno.io ${LIBFILES}
+		COMMAND msgfmt -o ${COMPILETRANSFILE} ${TRANSX}
 	)
+endforeach(TRANSX ${TRANSAPP})
 
-	file(GLOB TRANSAPP translate/appcmd/*.po)
+#manual
 
-	SET(TRANSAPPOUTDIR ${CMAKE_BINARY_DIR}/bin/translate/ttscmd/)
 
-	file(MAKE_DIRECTORY ${TRANSAPPOUTDIR})
 
-	foreach(TRANSX ${TRANSAPP})
-		
-		get_filename_component(T ${TRANSX} NAME_WE)
-		
-		
-		SET(COMPILETRANSFILE
-			${TRANSAPPOUTDIR}${T}.mo
-		)
-		#message(STATUS ${TRANSX})
-		message(STATUS "Found app translation for language ${T}")
-		message(STATUS "Creating translation: ")
-		message(STATUS ${COMPILETRANSFILE})
-		
-		execute_process(
-			COMMAND msgfmt -o ${COMPILETRANSFILE} ${TRANSX}
-		)
-	endforeach(TRANSX ${TRANSAPP})
+file(GLOB MOFILES ${TRANSAPPOUTDIR}*.mo)
 
-	#manual
-
-	SET(LC "/share/locale/fr/LC_MESSAGES/")
-	SET(LCMSG "${CMAKE_BINARY_DIR}${LC}")
+foreach(F ${MOFILES})
 	
-	file(MAKE_DIRECTORY ${LCMSG})
-	file(COPY ${TRANSAPPOUTDIR}/fr.mo DESTINATION ${CMAKE_BINARY_DIR})
-	file(RENAME ${CMAKE_BINARY_DIR}/fr.mo ${LCMSG}/ttscmd.mo)
-
-	SET(LCMSG "${CMAKE_BINARY_DIR}/share/locale/fr_FR/LC_MESSAGES/")
-	file(MAKE_DIRECTORY ${LCMSG})
-	file(COPY ${TRANSAPPOUTDIR}/fr.mo DESTINATION ${CMAKE_BINARY_DIR})
-	file(RENAME ${CMAKE_BINARY_DIR}/fr.mo ${LCMSG}/ttscmd.mo)
+	get_filename_component(T ${F} NAME_WE)
+	message(STATUS "Mo: ${T}")
+	SET(LCMSG "${CMAKE_BINARY_DIR}/share/locale/${T}/LC_MESSAGES/")
+	message(STATUS "Moved to ${LCMSG}ttscmd.mo")
+	file(MAKE_DIRECTORY ${LCMSG})	
 	
-	install(DIRECTORY "${CMAKE_BINARY_DIR}/share" DESTINATION ${CMAKE_INSTALL_PREFIX})
-else(XGETTEXT)
-	message(STATUS "-- xgettext not found")
-	message(STATUS "   Translations Disabled")
-endif(XGETTEXT)
+	FILE(COPY ${F} DESTINATION "${LCMSG}")
+	FILE(RENAME ${LCMSG}/${T}.mo ${LCMSG}/ttscmd.mo)
+file(MAKE_DIRECTORY ${LCMSG})
+endforeach(F ${MOFILES})
+
+
 
 message(STATUS "")
 message(STATUS "")
