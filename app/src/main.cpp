@@ -8,10 +8,11 @@
 *                                                    *
 ******************************************************/
 
-#ifdef USING_BOOST
 
-#include <io.jno/tts/Voices.h>
-#include <io.jno/tts/Unicode.h>
+
+#include <io_jno/tts/Voices.h>
+#include <io_jno/tts/Unicode.h>
+#include <io_jno/tts/Version.h>
 
 #include <sapi.h>
 #include <sphelper.h>
@@ -33,8 +34,9 @@
 
 #include <atlbase.h>
 
-#include <io.jno/tts/Unicode.h>
-#include <io.jno/tts/Version.h>
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
 
 typedef std::basic_string<TCHAR> tstring;
 typedef std::basic_stringstream<TCHAR, std::char_traits<TCHAR>, std::allocator<TCHAR> > tstringstream;
@@ -61,23 +63,35 @@ int main(int argc, char* argv[])
 #endif
 {
 	lo::generator gen;
-	std::locale sysloc = std::locale("");
+	std::locale sysloc = gen("");
 
-	std::string locname = sysloc.name();
+	std::string locname = std::use_facet<boost::locale::info>(sysloc).name();
+#if _DEBUG
+	std::cout << "loc.name:" << locname << std::endl;
+#endif
 #if UNICODE
-	boost::filesystem::path p("../share/locale/");
-
-	//std::cout << "Using Translation path:" << std::endl;
-	//std::cout << p << std::endl;
+	TCHAR *tempfilename = new TCHAR[MAX_PATH];
+	GetModuleFileName(NULL, tempfilename, MAX_PATH);
+	boost::filesystem::path exepath(tempfilename);
+	delete[] tempfilename;
+	boost::filesystem::path root = exepath.parent_path();
+	root = root.parent_path();
+	boost::filesystem::path p(root);
+	p += "/share/locale";
+	//boost::filesystem::path p("../share/locale/");
+#if _DEBUG
+	std::cout << "Using Translation path:" << std::endl;
+	std::cout << p << std::endl;
+#endif
 
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("ttscmd");
 
-	//std::locale fr = gen("fr_FR.UTF-8");
-	std::locale fr = sysloc;
-	std::locale::global(fr);
-	std::wcout.imbue(fr);
-	std::cout.imbue(fr);
+	sysloc = gen(locname);
+	
+	std::locale::global(sysloc);
+	std::wcout.imbue(sysloc);
+	std::cout.imbue(sysloc);
 #endif
 	std::string locstr;
 
@@ -167,6 +181,7 @@ int main(int argc, char* argv[])
 		std::locale::global(loc);
 		std::wcout.imbue(loc);
 		std::cout.imbue(loc);
+		sysloc = loc;
 	}
 
 	if (vm.count("age") ||
@@ -314,8 +329,16 @@ int main(int argc, char* argv[])
 
 	if (vm.count("say"))
 	{
+#if UNICODE
+		std::wstringstream ss_say;
+		ss_say.imbue(sysloc);
+		ss_say << vm["say"].as<tts::string>();
+		strsay = ss_say.str();
+#else
 		strsay = vm["say"].as<tts::string>();
+#endif
 	}
+
 
 	tts::stringstream ss;	
 	
@@ -418,5 +441,5 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-#endif// USING_BOOST
+
 
