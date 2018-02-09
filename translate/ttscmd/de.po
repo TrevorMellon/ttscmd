@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: t@jno.io\n"
 "POT-Creation-Date: 2018-02-08 20:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Trevor Mellon, 2018\n"
 "Language-Team: German (https://www.transifex.com/trevor-mellon/teams/83331/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,119 +21,119 @@ msgstr ""
 
 #: S:/github/ttscmd/app/src/main.cpp:90 S:/github/ttscmd/app/src/main.cpp:100
 msgid "What would you like me to say?"
-msgstr ""
+msgstr "Was soll ich dir sagen?"
 
 #: S:/github/ttscmd/app/src/main.cpp:93
 msgid "Primary Options"
-msgstr ""
+msgstr "Primäre Optionen"
 
 #: S:/github/ttscmd/app/src/main.cpp:95
 msgid "Display version information"
-msgstr ""
+msgstr "Versionsinformationen anzeigen"
 
 #: S:/github/ttscmd/app/src/main.cpp:96
 msgid "Show help information"
-msgstr ""
+msgstr "Hilfeinformationen anzeigen"
 
 #: S:/github/ttscmd/app/src/main.cpp:98 S:/github/ttscmd/app/src/main.cpp:100
 msgid "Speak the following text"
-msgstr ""
+msgstr "Sprechen Sie den folgenden Text"
 
 #: S:/github/ttscmd/app/src/main.cpp:106
 msgid "List Options"
-msgstr ""
+msgstr "Listenoptionen"
 
 #: S:/github/ttscmd/app/src/main.cpp:108
 msgid "List voices installed on the system"
-msgstr ""
+msgstr "Listen Sie die Stimmen auf, die auf dem System installiert sind"
 
 #: S:/github/ttscmd/app/src/main.cpp:109
 msgid "Use json output"
-msgstr ""
+msgstr "Verwenden Sie die json-Ausgabe"
 
 #: S:/github/ttscmd/app/src/main.cpp:110
 msgid "Write json to file"
-msgstr ""
+msgstr "Schreibe json in Datei"
 
 #: S:/github/ttscmd/app/src/main.cpp:120
 msgid "Search Options"
-msgstr ""
+msgstr "Suchoptionen"
 
 #: S:/github/ttscmd/app/src/main.cpp:122
 msgid "Based on age"
-msgstr ""
+msgstr "Basierend auf dem Alter"
 
 #: S:/github/ttscmd/app/src/main.cpp:123
 msgid "Based on gender"
-msgstr ""
+msgstr "Basierend auf dem Geschlecht"
 
 #: S:/github/ttscmd/app/src/main.cpp:124
 msgid "Based on language code"
-msgstr ""
+msgstr "Basierend auf dem Sprachcode"
 
 #: S:/github/ttscmd/app/src/main.cpp:125
 msgid "Based on voice name"
-msgstr ""
+msgstr "Basierend auf dem Sprachcode"
 
 #: S:/github/ttscmd/app/src/main.cpp:126
 msgid "Based on voice vendor"
-msgstr ""
+msgstr "Basierend auf Sprachanbieter"
 
 #: S:/github/ttscmd/app/src/main.cpp:135
 msgid "Input/Output Options"
-msgstr ""
+msgstr "I/O-Optionen"
 
 #: S:/github/ttscmd/app/src/main.cpp:138
 msgid "Write to wav file instead of speakers"
-msgstr ""
+msgstr "Schreiben Sie in die WAV-Datei statt in die Lautsprecher"
 
 #: S:/github/ttscmd/app/src/main.cpp:226 S:/github/ttscmd/app/src/main.cpp:267
 msgid "Voice\t\t: "
-msgstr ""
+msgstr "Stimme\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:227 S:/github/ttscmd/app/src/main.cpp:268
 msgid "Gender\t\t: "
-msgstr ""
+msgstr "Geschlecht\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:228 S:/github/ttscmd/app/src/main.cpp:269
 msgid "Age\t\t: "
-msgstr ""
+msgstr "Alter\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:229 S:/github/ttscmd/app/src/main.cpp:270
 msgid "Vendor\t\t: "
-msgstr ""
+msgstr "Verkäufer\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:230 S:/github/ttscmd/app/src/main.cpp:271
 msgid "Language\t: "
-msgstr ""
+msgstr "Sprache\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:231 S:/github/ttscmd/app/src/main.cpp:272
 msgid "LangCode\t: "
-msgstr ""
+msgstr "Sprachcode\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:286
 msgid "From Git rev: "
-msgstr ""
+msgstr "Von Git Revision: "
 
 #: S:/github/ttscmd/app/src/main.cpp:286
 msgid " on "
-msgstr ""
+msgstr " auf "
 
 #: S:/github/ttscmd/app/src/main.cpp:286
 msgid " branch."
-msgstr ""
+msgstr " ast."
 
 #: S:/github/ttscmd/app/src/main.cpp:287
 msgid "Version : "
-msgstr ""
+msgstr "Ausführung : "
 
 #: S:/github/ttscmd/app/src/main.cpp:320
 msgid "Failed to retrieve CLSID for COM server"
-msgstr ""
+msgstr "Fehler beim Abrufen der CLSID für den COM-Server"
 
 #: S:/github/ttscmd/app/src/main.cpp:326
 msgid "Failed to start COM server"
-msgstr ""
+msgstr "Fehler beim Starten des COM-Servers"
 
 #: S:/github/ttscmd/src/Voices.cpp:53 S:/github/ttscmd/src/Voices.cpp:185
 msgid "Afrikaans"
