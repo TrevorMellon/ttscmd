@@ -21,7 +21,7 @@ msgstr ""
 
 #: S:/github/ttscmd/app/src/main.cpp:90 S:/github/ttscmd/app/src/main.cpp:100
 msgid "What would you like me to say?"
-msgstr "Qu’aimeriez-vous dire ?"
+msgstr "Qu’aimeriez-vous dire?"
 
 #: S:/github/ttscmd/app/src/main.cpp:93
 msgid "Primary Options"
@@ -109,7 +109,7 @@ msgstr "Langue\t\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:231 S:/github/ttscmd/app/src/main.cpp:272
 msgid "LangCode\t: "
-msgstr "Code de langue: "
+msgstr "Code de langue\t: "
 
 #: S:/github/ttscmd/app/src/main.cpp:286
 msgid "From Git rev: "
