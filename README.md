@@ -25,3 +25,6 @@ Fuzzy evaluation for age, gender, name so as to get the closest voice possible.
 
 ### Input/Output Options:
 *  --wav arg                             Write to wav file instead of speakers
+
+## Transifex Project
+[transifex.com](https://www.transifex.com/trevor-mellon/ttscmd)
