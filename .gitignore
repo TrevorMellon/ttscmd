@@ -32,4 +32,4 @@ vs/**
 b/**
 build/**
 
-include/io.jno/tts/Version.h
+include/io_jno/tts/Version.h
