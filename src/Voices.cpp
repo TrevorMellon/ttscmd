@@ -9,8 +9,8 @@
 ******************************************************/
 
 
-#include <io.jno/tts/Voices.h>
-#include <io.jno/tts/Version.h>
+#include <io_jno/tts/Voices.h>
+#include <io_jno/tts/Version.h>
 
 #include <windows.h>
 #include <tchar.h>

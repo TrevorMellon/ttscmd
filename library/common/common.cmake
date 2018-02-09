@@ -5,8 +5,8 @@ SET( srcs
 )
 
 SET( inc 
-	${PROJECT_SOURCE_DIR}/include/io.jno/tts/Voices.h
-	${PROJECT_SOURCE_DIR}/include/io.jno/tts/Speech.h
+	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Voices.h
+	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Speech.h
 )
 
 
