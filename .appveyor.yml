@@ -23,7 +23,7 @@ before_build:
  - cmd: mkdir ttscmd
  - cmd: set lib=%BOOST_LIBRARYDIR%;%lib%
  - ps: $wc = New-Object System.Net.WebClient
- - ps: $wc.DownloadFile($env:GETTEXTURL, gettext.zip)
+ - ps: $wc.DownloadFile("$env:GETTEXTURL", "gettext.zip")
  - ps: Expand-Archive gettext.zip -DestinationPath $pwd\gettext
  - cmd: PATH=%CD%\gettext\bin;%PATH%
  - cmd: cd ..
