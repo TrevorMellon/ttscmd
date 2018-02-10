@@ -1,12 +1,13 @@
 
 SET( srcs 
-	${PROJECT_SOURCE_DIR}/src/Voices.cpp
+	${PROJECT_SOURCE_DIR}/src/VoiceManager.cpp
 	${PROJECT_SOURCE_DIR}/src/Speech.cpp
 )
 
 SET( inc 
-	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Voices.h
+	${PROJECT_SOURCE_DIR}/include/io_jno/tts/VoiceManager.h
 	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Speech.h
+	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Types.h
 )
 
 

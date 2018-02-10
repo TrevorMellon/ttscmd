@@ -1,5 +1,5 @@
 #include <Application.h>
-#include <io_jno/tts/Voices.h>
+#include <io_jno/tts/VoiceManager.h>
 #include <io_jno/tts/Unicode.h>
 #include <io_jno/tts/Version.h>
 
@@ -109,8 +109,8 @@ Application::~Application()
 
 void Application::parseOptions()
 {
-	tts::VoiceZ vz;
-	tts::VoicesK v;
+	tts::types::Voice vz;
+	tts::VoiceManager v;
 	vz = voiceOption();
 
 	sayOption();
@@ -237,10 +237,10 @@ void Application::localeOption()
 	}
 }
 
-tts::VoiceZ Application::voiceOption()
+tts::types::Voice Application::voiceOption()
 {
-	tts::VoicesK v;
-	tts::VoiceZ vz;
+	tts::VoiceManager v;
+	tts::types::Voice vz;
 	vz.zero();
 
 	if (_vm.count("age") ||
@@ -249,7 +249,7 @@ tts::VoiceZ Application::voiceOption()
 		_vm.count("name") ||
 		_vm.count("vend"))
 	{
-		tts::VoiceAttributesZ vatt;
+		tts::types::VoiceAttributes vatt;
 		vatt.zero();
 		if (_vm.count("age"))
 		{
@@ -282,7 +282,7 @@ tts::VoiceZ Application::voiceOption()
 			vatt.vendor = tts::string(tmpstr.begin(), tmpstr.end());
 		}
 
-		tts::Voices vcs = v.get(&vatt, true);
+		tts::types::Voices vcs = v.get(&vatt, true);
 
 		if (vcs.size() > 0)
 			vz = vcs.at(0);
@@ -307,7 +307,7 @@ tts::VoiceZ Application::voiceOption()
 			}
 			else{
 
-				for (tts::VoiceZ vvz : vcs)
+				for (tts::types::Voice vvz : vcs)
 				{
 					std::wcout << std::endl;
 					std::wcout << lo::translate(L"Voice\t\t: ") << towstring(vvz.attributes.name) << std::endl;
@@ -329,11 +329,11 @@ tts::VoiceZ Application::voiceOption()
 
 bool Application::listOption()
 {
-	tts::VoicesK v;
+	tts::VoiceManager v;
 	
 	if (_vm.count("list"))
 	{
-		tts::Voices vv = v.get();
+		tts::types::Voices vv = v.get();
 
 		if (_vm.count("json"))
 		{
@@ -354,7 +354,7 @@ bool Application::listOption()
 		else
 		{
 
-			for (tts::VoiceZ vvz : vv)
+			for (tts::types::Voice vvz : vv)
 			{
 				tts::string gend = vvz.attributes.toGenderStr();
 
@@ -395,7 +395,7 @@ bool Application::helpOption()
 {
 	if (_vm.count("help"))
 	{
-		std::cout << _allopts << std::endl;
+		std::cout << *_allopts << std::endl;
 		exit(0);
 	}
 	return false;
@@ -422,7 +422,7 @@ bool Application::versionOption()
 	return false;
 }
 
-void Application::speak(io_jno::tts::VoiceZ &vz)
+void Application::speak(io_jno::tts::types::Voice &vz)
 {
 	tts::stringstream ss;
 

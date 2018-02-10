@@ -2,8 +2,9 @@
 #define APPLICATION_H
 
 #include <locale>
-#include <io_jno/tts/Voices.h>
+#include <io_jno/tts/VoiceManager.h>
 #include <io_jno/tts/Unicode.h>
+#include <io_jno/tts/Types.h>
 
 #include <boost/program_options.hpp>
 
@@ -17,14 +18,14 @@ public:
 #endif
 	~Application();
 public:
-	void speak(io_jno::tts::VoiceZ &vz);
+	void speak(io_jno::tts::types::Voice &vz);
 public:
 	void parseOptions();
 private:
 	void Options();
 
 	void localeOption();
-	io_jno::tts::VoiceZ voiceOption();
+	io_jno::tts::types::Voice voiceOption();
 	bool listOption();
 	bool sayOption();
 	bool helpOption();
