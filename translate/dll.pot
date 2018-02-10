@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the ttscmd-1.0 package.
+# This file is distributed under the same license as the ttscmd1-1.0 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ttscmd-1.0\n"
+"Project-Id-Version: ttscmd1-1.0\n"
 "Report-Msgid-Bugs-To: t@jno.io\n"
 "POT-Creation-Date: 2018-02-10 17:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -16,138 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-
-#: V:/github/ttscmd/app/src/Application.cpp:151
-#: V:/github/ttscmd/app/src/Application.cpp:161
-msgid "What would you like me to say?"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:154
-msgid "Primary Options"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:156
-msgid "Display version information"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:157
-msgid "Show help information"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:159
-#: V:/github/ttscmd/app/src/Application.cpp:161
-msgid "Speak the following text"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:167
-msgid "List Options"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:169
-msgid "List voices installed on the system"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:170
-msgid "Use json output"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:171
-msgid "Write json to file"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:172
-msgid "Use the included locale instead of system"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:177
-msgid "Search Options"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:179
-msgid "Based on age"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:180
-msgid "Based on gender"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:181
-msgid "Based on language code"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:182
-msgid "Based on voice name"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:183
-msgid "Based on voice vendor"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:186
-msgid "Input/Output Options"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:189
-msgid "Write to wav file instead of speakers"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:220
-msgid "locale"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:313
-#: V:/github/ttscmd/app/src/Application.cpp:362
-msgid "Voice\t\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:314
-#: V:/github/ttscmd/app/src/Application.cpp:363
-msgid "Gender\t\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:315
-#: V:/github/ttscmd/app/src/Application.cpp:364
-msgid "Age\t\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:316
-#: V:/github/ttscmd/app/src/Application.cpp:365
-msgid "Vendor\t\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:317
-#: V:/github/ttscmd/app/src/Application.cpp:366
-msgid "Language\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:318
-#: V:/github/ttscmd/app/src/Application.cpp:367
-msgid "LangCode\t: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:409
-msgid "From Git rev: "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:409
-msgid " on "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:409
-msgid " branch."
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:410
-msgid "Version : "
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:440
-msgid "Failed to retrieve CLSID for COM server"
-msgstr ""
-
-#: V:/github/ttscmd/app/src/Application.cpp:446
-msgid "Failed to start COM server"
-msgstr ""
 
 #: V:/github/ttscmd/src/VoiceManager.cpp:54
 #: V:/github/ttscmd/src/VoiceManager.cpp:186 V:/github/ttscmd/src/Voices.cpp:53

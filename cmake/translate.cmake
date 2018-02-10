@@ -26,9 +26,9 @@ else(NOT XGET)
 		"\"src\" -iname \"*.cpp\" > \"libclutts.list\""
 	)
 
-	file(GLOB LIBFILES src/*.cpp include/clu/tts/*.h)
+	file(GLOB LIBFILES src/*.cpp include/io_jno/tts/*.h)
 
-	file(GLOB APPFILES app/src/*.cpp)
+	file(GLOB APPFILES app/src/*.cpp app/include/*.h)
 
 
 
