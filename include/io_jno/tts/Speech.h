@@ -14,6 +14,7 @@
 #include <string>
 
 #include <io_jno/tts/Types.h>
+#include <io_jno/tts/Export.h>
 
 namespace io_jno
 {
@@ -21,7 +22,7 @@ namespace io_jno
 	{
 		class SpeechPrivate;
 
-		class Speech
+		class TTS_EXPORT Speech
 		{
 		public:
 			Speech();
