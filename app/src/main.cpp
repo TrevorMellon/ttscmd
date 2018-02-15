@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 #endif
 {
 	Application app(argc, argv);
-	app.parseOptions();
+	//app.parseOptions();
 	return 0;
 }
 

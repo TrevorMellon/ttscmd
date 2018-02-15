@@ -46,8 +46,15 @@ Application::Application(int argc, TCHAR** argv)
 
 	lo::generator gen;
 	_sysloc = gen("");
-
-	std::string locname = std::use_facet<boost::locale::info>(_sysloc).name();
+	std::string locname;
+	try
+	{
+		locname = std::use_facet<boost::locale::info>(_sysloc).name();
+	}
+	catch (std::bad_cast &e)
+	{
+		std::cerr << "Could not get profile: " << e.what() << std::endl;
+	}
 	_sysloc = gen(locname);
 
 	std::locale::global(_sysloc);
@@ -66,7 +73,7 @@ Application::Application(int argc, TCHAR** argv)
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("ttscmd");
 
-	Options();
+	parseOptions();
 }
 #else
 Application::Application(int argc, char** argv)
@@ -98,7 +105,7 @@ Application::Application(int argc, char** argv)
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("ttscmd");
 
-	Options();
+	parseOptions();
 }
 #endif
 
@@ -262,31 +269,76 @@ tts::types::Voice Application::voiceOption()
 		vatt.zero();
 		if (_vm.count("age"))
 		{
-			std::string tmpstr = _vm["age"].as<std::string>();
+			tts::string tmpstr;
+			try
+			{
+				tmpstr = _vm["age"].as<tts::string>();
+			}
+			catch (boost::bad_any_cast &e)
+			{
+				std::cerr << "age [bad cast]: " << e.what() << std::endl;
+				exit(-1);
+			}
 			boost::to_lower(tmpstr);
 			vatt.fromAgeStr(tts::string(tmpstr.begin(), tmpstr.end()));
 		}
 		if (_vm.count("gend"))
 		{
-			std::string tmpstr = _vm["gend"].as<std::string>();
+			tts::string tmpstr;
+			try
+			{
+				tmpstr = _vm["gend"].as<tts::string>();
+			}
+			catch (boost::bad_any_cast &e)
+			{
+				std::cerr << "gend [bad cast]: " << e.what() << std::endl;
+				exit(-1);
+			}
 			boost::to_lower(tmpstr);
 			vatt.fromGenderStr(tts::string(tmpstr.begin(), tmpstr.end()));
 		}
 		if (_vm.count("lang"))
 		{
-			std::string tmpstr = _vm["lang"].as<std::string>();
+			tts::string tmpstr;
+			try
+			{
+				tmpstr = _vm["lang"].as<tts::string>();
+			}
+			catch (boost::bad_any_cast &e)
+			{
+				std::cerr << "lang [bad cast]: " << e.what() << std::endl;
+				exit(-1);
+			}
 			boost::to_lower(tmpstr);
 			vatt.language = tts::string(tmpstr.begin(), tmpstr.end());
 		}
 		if (_vm.count("name"))
 		{
-			std::string tmpstr = _vm["name"].as<std::string>();
+			tts::string tmpstr;
+			try
+			{
+				tmpstr = _vm["name"].as<tts::string>();
+			}
+			catch (boost::bad_any_cast &e)
+			{
+				std::cerr << "name [bad cast]: " << e.what() << std::endl;
+				exit(-1);
+			}
 			boost::to_lower(tmpstr);
 			vatt.name = tts::string(tmpstr.begin(), tmpstr.end());
 		}
 		if (_vm.count("vend"))
 		{
-			std::string tmpstr = _vm["vend"].as<std::string>();
+			std::string tmpstr;
+			try
+			{
+				tmpstr = _vm["vend"].as<std::string>();
+			}
+			catch (boost::bad_any_cast &e)
+			{
+				std::cerr << "vend [bad cast]: " << e.what() << std::endl;
+				exit(-1);
+			}
 			boost::to_lower(tmpstr);
 			vatt.vendor = tts::string(tmpstr.begin(), tmpstr.end());
 		}
@@ -306,9 +358,19 @@ tts::types::Voice Application::voiceOption()
 			else if (_vm.count("jsonfile"))
 			{
 				tts::string t = v.json(vcs);
-				std::string ofilea = _vm["jsonfile"].as<std::string>();
+				tts::string ofilea;
 
-				std::wstring ofile = boost::locale::conv::to_utf<wchar_t>(ofilea, "UTF-8");
+				try
+				{
+					ofilea = _vm["jsonfile"].as<tts::string>();
+				}
+				catch (boost::bad_any_cast &e)
+				{
+					std::cerr << "Could not determine output filename: " << e.what();
+					exit(-1);
+				}
+				
+				std::wstring ofile = towstring(ofilea);
 				std::wofstream ofs(ofile);
 
 				ofs << towstring(t);
@@ -414,17 +476,25 @@ bool Application::versionOption()
 {
 	if (_vm.count("version"))
 	{
-		std::cout << lo::translate(TTSCMD_APPLICATION_NAME) << std::endl << std::endl;
-		std::cout << lo::translate("From Git rev: ") << TTSCMD_GIT_COMMIT_HASH << lo::translate(" on ") << TTSCMD_GIT_BRANCH << lo::translate(" branch.") << std::endl;
-		std::cout << lo::translate("Version : ") << TTSCMD_VERSION;
+		try
+		{
+			std::cout << lo::translate(TTSCMD_APPLICATION_NAME) << std::endl << std::endl;
+			std::cout << lo::translate("From Git rev: ") << TTSCMD_GIT_COMMIT_HASH << lo::translate(" on ") << TTSCMD_GIT_BRANCH << lo::translate(" branch.") << std::endl;
+			std::cout << lo::translate("Version : ") << TTSCMD_VERSION;
 #ifdef UNICODE
-		std::cout << " (Unicode)";
+			std::cout << " (Unicode)";
 #else
-		std::cout << " (Ansi)";
+			std::cout << " (Ansi)";
 #endif
-		std::cout << std::endl;
-		std::cout << "Locale:" << std::use_facet<boost::locale::info>(_sysloc).name() << std::endl;
-		std::cout << std::endl;
+			std::cout << std::endl;
+			std::cout << "Locale:" << std::use_facet<boost::locale::info>(_sysloc).name() << std::endl;
+			std::cout << std::endl;
+		}
+		catch (std::bad_cast &e)
+		{
+			std::cerr << "FATAL ERROR: " << e.what() << std::endl;
+			exit(-1);
+		}
 
 		exit(0);
 	}
@@ -445,6 +515,8 @@ void Application::speak(io_jno::tts::types::Voice &vz)
 
 	sp->setVoice(vz);
 	sp->speak(_strsay);
+
+	delete sp;
 
 	CoUninitialize();	
 }

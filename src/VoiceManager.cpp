@@ -367,63 +367,71 @@ namespace io_jno{
 			{
 				HRESULT hr = 0;
 
-				tts::stringstream locationss;
-				locationss << "HKEY_LOCAL_MACHINE\\" << key;
-
-				tts::string location = locationss.str();
-
-				locationss << "\\Tokens";
-
-				tts::stringstream keyss;
-				keyss << key << "\\Tokens";
-
-				//key = locationss.str();
-
-				HKEY mainKey;
-
-				hr = RegOpenKeyEx(HKEY_LOCAL_MACHINE, keyss.str().c_str(), NULL, KEY_READ | KEY_ENUMERATE_SUB_KEYS, &mainKey);
-
-				if (hr == ERROR_SUCCESS)
+				try
 				{
-					DWORD csize = 1024;
-					TCHAR *tmpkeyname = new TCHAR[csize];
+					tts::stringstream locationss;
+					locationss << "HKEY_LOCAL_MACHINE\\" << key;
 
-					uint32_t keyi = 0;
+					tts::string location = locationss.str();
 
+					locationss << "\\Tokens";
 
-					std::vector<tts::string> keynameList;
-					tts::string keyname;
-					keyname.clear();
+					tts::stringstream keyss;
+					keyss << key << "\\Tokens";
 
+					//key = locationss.str();
 
-					DWORD tmpsize = csize;
+					HKEY mainKey;
 
-					hr = RegEnumKeyEx(mainKey, keyi, tmpkeyname, &tmpsize, NULL, NULL, NULL, NULL);
-					while (hr == ERROR_SUCCESS)
+					hr = RegOpenKeyEx(HKEY_LOCAL_MACHINE, keyss.str().c_str(), NULL, KEY_READ | KEY_ENUMERATE_SUB_KEYS, &mainKey);
+
+					if (hr == ERROR_SUCCESS)
 					{
-						keyname = tmpkeyname;
+						DWORD csize = 1024;
+						TCHAR *tmpkeyname = new TCHAR[csize];
 
-						keynameList.push_back(keyname);
+						uint32_t keyi = 0;
 
-						tts::stringstream vss;
-						vss << keyss.str() << "\\" << keyname;
 
-						types::Voice vz = voiceRegParser(vss.str());
-						vz.tokenlocation = location;
+						std::vector<tts::string> keynameList;
+						tts::string keyname;
+						keyname.clear();
 
-						types::Voice civz = caseinsensitize(vz);
-						caseinsensitiveVoices.push_back(civz);
 
-						v.push_back(vz);
+						DWORD tmpsize = csize;
 
-						++keyi;
-						tmpsize = csize;
 						hr = RegEnumKeyEx(mainKey, keyi, tmpkeyname, &tmpsize, NULL, NULL, NULL, NULL);
+						while (hr == ERROR_SUCCESS)
+						{
+							keyname = tmpkeyname;
+
+							keynameList.push_back(keyname);
+
+							tts::stringstream vss;
+							vss << keyss.str() << "\\" << keyname;
+
+							types::Voice vz = voiceRegParser(vss.str());
+							vz.tokenlocation = location;
+
+							types::Voice civz = caseinsensitize(vz);
+							caseinsensitiveVoices.push_back(civz);
+
+							v.push_back(vz);
+
+							++keyi;
+							tmpsize = csize;
+							hr = RegEnumKeyEx(mainKey, keyi, tmpkeyname, &tmpsize, NULL, NULL, NULL, NULL);
+						}
+
+						delete[] tmpkeyname;
+
+
 					}
-
-					delete[] tmpkeyname;
-
-
+				}
+				catch (...)
+				{
+					std::cerr << "Fatal Error in polling the registry: " << std::endl;
+					exit(-1);
 				}
 
 				return false;
@@ -1847,10 +1855,10 @@ namespace io_jno{
 										uint32_t idx = 0;
 										for (types::Voice vt : *vv)
 										{
-											
+
 											if (//vt.attributes.age == like->age &&
 												//vt.attributes.gender == like->gender &&
-												matchLanguage(vt.attributes.language, like->language)												
+												matchLanguage(vt.attributes.language, like->language)
 												//matchString(vt.attributes.name, like->name) &&
 												//matchString(vt.attributes.vendor, like->vendor)
 												)
@@ -1944,15 +1952,15 @@ namespace io_jno{
 								}
 							}
 						}
-					}
+					}		
 #else
-					return get(like,false);
-#endif	
+					return get(like, false);
+#endif
 					return vl;
 				}
 
-				types::Voices vx;
-				return vx;
+				types::Voices vc;
+				return vc;
 			}
 
 			bool matchString(tts::string input, tts::string test)
@@ -1966,7 +1974,15 @@ namespace io_jno{
 
 
 				std::vector<tts::string> strl;
-				boost::split(strl, test, boost::is_any_of(_split));
+
+				try
+				{
+					boost::split(strl, test, boost::is_any_of(_split));
+				}
+				catch (...)
+				{
+					return false;
+				}
 
 				for (tts::string s : strl)
 				{

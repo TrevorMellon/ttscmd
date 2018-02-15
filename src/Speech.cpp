@@ -96,10 +96,10 @@ namespace io_jno
 				{
 					_bVoiceSet = true;
 				}
-				else
-				{
-					_bVoiceSet = false;
-				}
+				
+				_bVoiceSet = false;
+				return _bVoiceSet;
+				
 			}
 
 			void setVoice(types::Voice &vc)
@@ -125,12 +125,12 @@ namespace io_jno
 				{
 					return false;
 				}
-				
+
 				CComPtr<IEnumSpObjectTokens>   cpOutEnum;
-				CComPtr<ISpObjectToken>        cpAudioOutToken;			
-				
+				CComPtr<ISpObjectToken>        cpAudioOutToken;
+
 				HRESULT hr = SpEnumTokens(SPCAT_AUDIOOUT, NULL, NULL, &cpOutEnum);
-				
+
 				ULONG outputCount = 0;
 				cpOutEnum->GetCount(&outputCount);
 
@@ -142,17 +142,20 @@ namespace io_jno
 
 					hr = _cpVoice->SetOutput(cpAudioOutToken, TRUE);
 
-					hr = _cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);					
+					if (SUCCEEDED(hr))
+					{
+						hr = _cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);
+						if (SUCCEEDED(hr))
+						{
+							return true;
+						}
+					}
+					else
+					{
+						return false;
+					}
 				}
-				else
-				{
-					return false;
-				}
-
-				if (SUCCEEDED(hr))
-				{
-					return true;
-				}
+				
 				return false;
 			}
 
@@ -181,7 +184,10 @@ namespace io_jno
 					hr = _cpVoice->SetOutput(cpStream, TRUE);
 				}
 
-				hr = _cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);
+				if (SUCCEEDED(hr))
+				{
+					hr = _cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);
+				}
 
 				if (SUCCEEDED(hr))
 				{
