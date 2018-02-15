@@ -19,7 +19,7 @@ else(BUILD_WITH_MT)
 	SET(Boost_USE_MULTITHREADED ON)
 endif(BUILD_WITH_MT)
 
-find_package(Boost REQUIRED COMPONENTS locale)
+find_package(Boost REQUIRED COMPONENTS locale system)
 find_package(ICU OPTIONAL_COMPONENTS uc data i18n)
 
 if(Boost_FOUND)
