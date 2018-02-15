@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/94cwfhgotu1a053h?svg=true)](https://ci.appveyor.com/project/TrevorMellon/ttscmd)
+| [![Build status](https://ci.appveyor.com/api/projects/status/94cwfhgotu1a053h?svg=true)](https://ci.appveyor.com/project/TrevorMellon/ttscmd) | [![Coverity Status](https://scan.coverity.com/projects/15071/badge.svg)](https://scan.coverity.com/projects/trevormellon-ttscmd)
 
 # ttscmd
 Microsoft SAPI Interface for enumerating voice tokens and companion command line text-to-speech (TTS) app. 
