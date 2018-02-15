@@ -2,6 +2,7 @@
 #include <io_jno/tts/VoiceManager.h>
 #include <io_jno/tts/Unicode.h>
 #include <io_jno/tts/Version.h>
+#include <io_jno/tts/Speech.h>
 
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>
@@ -109,37 +110,45 @@ Application::~Application()
 
 void Application::parseOptions()
 {
-	tts::types::Voice vz;
-	tts::VoiceManager v;
-	vz = voiceOption();
-
-	sayOption();
-
-	if (vz.attributes.name.empty())
+	try
 	{
+		tts::types::Voice vz;
+		tts::VoiceManager v;
+		vz = voiceOption();
 
-		
-		if (listOption()
-			|| helpOption()
-			|| versionOption())
+		sayOption();
+
+		if (vz.attributes.name.empty())
 		{
-			exit(0);
+
+
+			if (listOption()
+				|| helpOption()
+				|| versionOption())
+			{
+				exit(0);
+			}
+			else
+			{
+				auto vv = v.get();
+				if (vv.empty())
+				{
+					std::cerr << "No voices installed on this system";
+					exit(1);
+				}
+				vz = vv.at(0);
+				speak(vz);
+			}
 		}
 		else
 		{
-			auto vv = v.get();
-			if (vv.empty())
-			{
-				std::cerr << "No voices installed on this system";
-				exit(1);
-			}
-			vz = vv.at(0);
 			speak(vz);
 		}
 	}
-	else
+	catch (boost::bad_lexical_cast &e)
 	{
-		speak(vz);
+		std::cerr << "Bad input value: " << e.what() << std::endl;
+		exit(-1);
 	}
 }
 
@@ -424,101 +433,18 @@ bool Application::versionOption()
 
 void Application::speak(io_jno::tts::types::Voice &vz)
 {
-	tts::stringstream ss;
-
 	HRESULT hr = CoInitialize(NULL);
 
-
-
-	CComPtr<ISpObjectToken>       cpVoiceToken = 0;
-	CComPtr<IEnumSpObjectTokens>  cpEnum = 0;
-	CComPtr<ISpVoice>             cpVoice;
-
-
 	if (FAILED(hr))
 	{
-		printf(lo::translate("Failed to retrieve CLSID for COM server").str().c_str());
+		std::cerr << lo::translate("Failed to start COM server") << std::endl;
 		exit(-1);
 	}
 
-	if (FAILED(hr))
-	{
-		printf(lo::translate("Failed to start COM server").str().c_str());
-		exit(-1);
-	}
+	tts::Speech *sp = new tts::Speech();
 
-	if (SUCCEEDED(hr))
-	{
-		hr = CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_INPROC_SERVER, __uuidof(ISpVoice), (LPVOID *)&cpVoice);
+	sp->setVoice(vz);
+	sp->speak(_strsay);
 
-		std::wstringstream vss;
-
-		//std::wstring hklmw(L"HKEY_LOCAL_MACHINE\\");
-		//tts::string hklm(hklmw.begin(), hklmw.end());
-
-		vss << towstring(vz.tokenlocation);
-
-		if (vz.classid.empty())
-			hr = SpEnumTokens(SPCAT_VOICES, NULL, NULL, &cpEnum);
-		else
-		{
-			std::wstringstream wss;
-			wss << L"name=" << towstring(vz.attributes.name);
-			hr = SpEnumTokens(vss.str().c_str(), wss.str().c_str(), NULL, &cpEnum);
-		}
-
-
-
-		hr = cpEnum->Next(1, &cpVoiceToken, NULL);
-
-		if (SUCCEEDED(hr))
-		{
-			hr = cpVoice->SetVoice(cpVoiceToken);
-			ISpObjectTokenCategory* tc;
-			cpVoiceToken->GetCategory(&tc);
-
-		}
-
-		if (SUCCEEDED(hr))
-		{
-			std::wstring twstr(_strsay.begin(), _strsay.end());
-
-			if (_vm.count("wav"))
-			{
-				CSpStreamFormat			cAudioFmt;
-				CComPtr<ISpStream>		cpStream;
-
-				hr = cAudioFmt.AssignFormat(SPSF_44kHz16BitMono);
-
-				if (SUCCEEDED(hr))
-				{
-					std::string str = _vm["wav"].as<std::string>();
-					std::wstring wstr(str.begin(), str.end());
-					hr = SPBindToFile(wstr.c_str(), SPFM_CREATE_ALWAYS,
-						&cpStream, &cAudioFmt.FormatId(), cAudioFmt.WaveFormatExPtr());
-				}
-				if (SUCCEEDED(hr))
-				{
-					hr = cpVoice->SetOutput(cpStream, TRUE);
-				}
-
-				hr = cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);
-
-				if (SUCCEEDED(hr))
-				{
-					hr = cpStream->Close();
-				}
-			}
-			else
-			{
-				hr = cpVoice->Speak(twstr.c_str(), SPF_DEFAULT, NULL);
-			}
-
-		}
-		cpVoice.Release();
-		cpEnum.Release();
-		cpVoiceToken.Release();
-	}
-
-	CoUninitialize();
+	CoUninitialize();	
 }
