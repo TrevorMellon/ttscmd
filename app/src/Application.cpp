@@ -73,6 +73,7 @@ Application::Application(int argc, TCHAR** argv)
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("ttscmd");
 
+	Options();
 	parseOptions();
 }
 #else
@@ -105,6 +106,7 @@ Application::Application(int argc, char** argv)
 	gen.add_messages_path(p.string());
 	gen.add_messages_domain("ttscmd");
 
+	Options();
 	parseOptions();
 }
 #endif
@@ -269,10 +271,10 @@ tts::types::Voice Application::voiceOption()
 		vatt.zero();
 		if (_vm.count("age"))
 		{
-			tts::string tmpstr;
+			std::string tmpstr;
 			try
 			{
-				tmpstr = _vm["age"].as<tts::string>();
+				tmpstr = _vm["age"].as<std::string>();
 			}
 			catch (boost::bad_any_cast &e)
 			{
@@ -284,10 +286,10 @@ tts::types::Voice Application::voiceOption()
 		}
 		if (_vm.count("gend"))
 		{
-			tts::string tmpstr;
+			std::string tmpstr;
 			try
 			{
-				tmpstr = _vm["gend"].as<tts::string>();
+				tmpstr = _vm["gend"].as<std::string>();
 			}
 			catch (boost::bad_any_cast &e)
 			{
@@ -299,10 +301,10 @@ tts::types::Voice Application::voiceOption()
 		}
 		if (_vm.count("lang"))
 		{
-			tts::string tmpstr;
+			std::string tmpstr;
 			try
 			{
-				tmpstr = _vm["lang"].as<tts::string>();
+				tmpstr = _vm["lang"].as<std::string>();
 			}
 			catch (boost::bad_any_cast &e)
 			{
@@ -314,10 +316,10 @@ tts::types::Voice Application::voiceOption()
 		}
 		if (_vm.count("name"))
 		{
-			tts::string tmpstr;
+			std::string tmpstr;
 			try
 			{
-				tmpstr = _vm["name"].as<tts::string>();
+				tmpstr = _vm["name"].as<std::string>();
 			}
 			catch (boost::bad_any_cast &e)
 			{

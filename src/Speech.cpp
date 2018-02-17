@@ -95,6 +95,7 @@ namespace io_jno
 				if (SUCCEEDED(hr))
 				{
 					_bVoiceSet = true;
+					return _bVoiceSet;
 				}
 				
 				_bVoiceSet = false;
