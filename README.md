@@ -28,3 +28,6 @@ Fuzzy evaluation for age, gender, name so as to get the closest voice possible.
 
 ## Transifex Project
 [transifex.com](https://www.transifex.com/trevor-mellon/ttscmd)
+
+# Credits
+[Credits](CREDITS.md)
