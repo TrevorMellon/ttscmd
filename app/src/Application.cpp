@@ -409,7 +409,11 @@ bool Application::listOption()
 		if (_vm.count("json"))
 		{
 			tts::string t = v.json(vv);
-			std::wcout << towstring(t) << std::endl;
+#if UNICODE
+			std::cout << boost::locale::conv::from_utf(t, _sysloc) << std::endl;
+#else
+			std::cout << t << std::endl;
+#endif
 		}
 		else if (_vm.count("jsonfile"))
 		{
@@ -428,15 +432,24 @@ bool Application::listOption()
 			for (tts::types::Voice vvz : vv)
 			{
 				tts::string gend = vvz.attributes.toGenderStr();
-
-				std::wcout << std::endl;
-				std::wcout << lo::translate(L"Voice\t\t: ") << towstring(vvz.attributes.name) << std::endl;
-				std::wcout << lo::translate(L"Gender\t\t: ") << towstring(gend) << std::endl;
-				std::wcout << lo::translate(L"Age\t\t: ") << towstring(vvz.attributes.toAgeStr()) << std::endl;
-				std::wcout << lo::translate(L"Vendor\t\t: ") << towstring(vvz.attributes.vendor) << std::endl;
-				std::wcout << lo::translate(L"Language\t: ") << towstring(vvz.attributes.language) << std::endl;
-				std::wcout << lo::translate(L"LangCode\t: ") << towstring(vvz.attributes.languageCode) << std::endl;
-				std::wcout << std::endl;
+#if UNICODE
+				std::cout << std::endl;
+				std::cout << lo::translate("Voice\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.name, _sysloc) << std::endl;
+				std::cout << lo::translate("Gender\t\t: ") << boost::locale::conv::from_utf(gend, _sysloc) << std::endl;
+				std::cout << lo::translate("Age\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.toAgeStr(), _sysloc) << std::endl;
+				std::cout << lo::translate("Vendor\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.vendor, _sysloc) << std::endl;
+				std::cout << lo::translate("Language\t: ") << boost::locale::conv::from_utf(vvz.attributes.language, _sysloc) << std::endl;
+				std::cout << lo::translate("LangCode\t: ") << boost::locale::conv::from_utf(vvz.attributes.languageCode, _sysloc) << std::endl;
+#else
+				std::cout << std::endl;
+				std::cout << lo::translate("Voice\t\t: ") << vvz.attributes.name, _sysloc << std::endl;
+				std::cout << lo::translate("Gender\t\t: ") << gend << std::endl;
+				std::cout << lo::translate("Age\t\t: ") << vvz.attributes.toAgeStr() << std::endl;
+				std::cout << lo::translate("Vendor\t\t: ") << vvz.attributes.vendor << std::endl;
+				std::cout << lo::translate("Language\t: ") << vvz.attributes.language << std::endl;
+				std::cout << lo::translate("LangCode\t: ") << vvz.attributes.languageCode << std::endl;
+#endif
+				std::cout << std::endl;
 			}
 		}
 		exit(0);
