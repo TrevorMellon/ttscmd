@@ -442,7 +442,7 @@ bool Application::listOption()
 				std::cout << lo::translate("LangCode\t: ") << boost::locale::conv::from_utf(vvz.attributes.languageCode, _sysloc) << std::endl;
 #else
 				std::cout << std::endl;
-				std::cout << lo::translate("Voice\t\t: ") << vvz.attributes.name, _sysloc << std::endl;
+				std::cout << lo::translate("Voice\t\t: ") << vvz.attributes.name << std::endl;
 				std::cout << lo::translate("Gender\t\t: ") << gend << std::endl;
 				std::cout << lo::translate("Age\t\t: ") << vvz.attributes.toAgeStr() << std::endl;
 				std::cout << lo::translate("Vendor\t\t: ") << vvz.attributes.vendor << std::endl;
