@@ -19,6 +19,7 @@ public:
 	~Application();
 public:
 	void speak(io_jno::tts::types::Voice &vz);
+	void wav(io_jno::tts::types::Voice &vc, io_jno::tts::string filename);
 public:
 	void parseOptions();
 private:

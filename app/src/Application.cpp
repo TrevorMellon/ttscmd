@@ -150,12 +150,38 @@ void Application::parseOptions()
 					exit(1);
 				}
 				vz = vv.at(0);
-				speak(vz);
+				if (_vm.count("wav"))
+				{
+					std::string file = _vm["wav"].as<std::string>();
+#if UNICODE
+					std::wstring filew = conv::to_utf<wchar_t>(file, "UTF-8");
+					wav(vz, filew);
+#else
+					wav(vz, file);
+#endif
+				}
+				else
+				{
+					speak(vz);
+				}
 			}
 		}
 		else
 		{
-			speak(vz);
+			if (_vm.count("wav"))
+			{
+				std::string file = _vm["wav"].as<std::string>();
+#if UNICODE
+				std::wstring filew = conv::to_utf<wchar_t>(file, "UTF-8");
+				wav(vz, filew);
+#else
+				wav(vz, file);
+#endif
+			}
+			else
+			{
+				speak(vz);
+			}
 		}
 	}
 	catch (boost::bad_lexical_cast &e)
@@ -178,9 +204,11 @@ void Application::Options()
 		("version,v", lo::translate("Display version information").str().c_str())
 		("help,h", lo::translate("Show help information").str().c_str())
 #if UNICODE
-		("say,s", po::wvalue<std::wstring>(&_strsay), lo::translate("Speak the following text").str().c_str())
+		("say,s", po::wvalue<std::wstring>(&_strsay)
+		, lo::translate("Speak the following text").str().c_str())
 #else
-		("say,s", po::value<tts::string>(&_strsay)->default_value(lo::translate("What would you like me to say?").str().c_str()), lo::translate("Speak the following text").str().c_str())
+		("say,s", po::value<tts::string>(&_strsay)->default_value(lo::translate("What would you like me to say?").str().c_str())
+		, lo::translate("Speak the following text").str().c_str())
 #endif
 		;
 
@@ -589,4 +617,24 @@ void Application::speak(io_jno::tts::types::Voice &vz)
 	delete sp;
 
 	CoUninitialize();	
+}
+
+void Application::wav(io_jno::tts::types::Voice &vc, tts::string filename)
+{
+	HRESULT hr = CoInitialize(NULL);
+
+	if (FAILED(hr))
+	{
+		std::cerr << lo::translate("Failed to start COM server") << std::endl;
+		exit(-1);
+	}
+
+	tts::Speech *sp = new tts::Speech();
+
+	sp->setVoice(vc);
+	sp->wav(_strsay, filename);
+	
+	delete sp;
+
+	CoUninitialize();
 }
