@@ -22,15 +22,15 @@ msgstr ""
 #: S:/github/ttscmd/app/src/Application.cpp:167
 #: S:/github/ttscmd/app/src/Application.cpp:177
 msgid "What would you like me to say?"
-msgstr "Что бы ты хотел чтобы я сказал?"
+msgstr "Что мне нужно озвучить?"
 
 #: S:/github/ttscmd/app/src/Application.cpp:170
 msgid "Primary Options"
-msgstr "Первичные параметры"
+msgstr "Основные настройки / основные параметры"
 
 #: S:/github/ttscmd/app/src/Application.cpp:172
 msgid "Display version information"
-msgstr "Отображать информацию о версии"
+msgstr "Отобразить информацию о версии"
 
 #: S:/github/ttscmd/app/src/Application.cpp:173
 msgid "Show help information"
@@ -39,11 +39,11 @@ msgstr "Показать справочную информацию"
 #: S:/github/ttscmd/app/src/Application.cpp:175
 #: S:/github/ttscmd/app/src/Application.cpp:177
 msgid "Speak the following text"
-msgstr "Поговорите следующий текст"
+msgstr "Проговорить следующий текст"
 
 #: S:/github/ttscmd/app/src/Application.cpp:183
 msgid "List Options"
-msgstr "Параметры списка"
+msgstr "Настройки списка"
 
 #: S:/github/ttscmd/app/src/Application.cpp:185
 msgid "List voices installed on the system"
@@ -59,11 +59,11 @@ msgstr "Запись json в файл"
 
 #: S:/github/ttscmd/app/src/Application.cpp:188
 msgid "Use the included locale instead of system"
-msgstr "Используйте включенную локаль вместо системы"
+msgstr "Использовать индивидуальные настройки языка"
 
 #: S:/github/ttscmd/app/src/Application.cpp:193
 msgid "Search Options"
-msgstr "Параметры поиска"
+msgstr "Настройки поиска"
 
 #: S:/github/ttscmd/app/src/Application.cpp:195
 msgid "Based on age"
@@ -79,11 +79,11 @@ msgstr "На основе кода языка"
 
 #: S:/github/ttscmd/app/src/Application.cpp:198
 msgid "Based on voice name"
-msgstr "На основе голосового имени"
+msgstr "По названию голоса"
 
 #: S:/github/ttscmd/app/src/Application.cpp:199
 msgid "Based on voice vendor"
-msgstr "Основываясь на голосовом поставщике"
+msgstr "По поставщику голосов"
 
 #: S:/github/ttscmd/app/src/Application.cpp:202
 msgid "Input/Output Options"
@@ -95,41 +95,41 @@ msgstr "Запись в wav-файл вместо динамиков"
 
 #: S:/github/ttscmd/app/src/Application.cpp:236
 msgid "locale"
-msgstr ""
+msgstr "место действия"
 
 #: S:/github/ttscmd/app/src/Application.cpp:384
 #: S:/github/ttscmd/app/src/Application.cpp:433
 msgid "Voice\t\t: "
-msgstr ""
+msgstr "Голос\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:385
 #: S:/github/ttscmd/app/src/Application.cpp:434
 msgid "Gender\t\t: "
-msgstr ""
+msgstr "Пол\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:386
 #: S:/github/ttscmd/app/src/Application.cpp:435
 msgid "Age\t\t: "
-msgstr ""
+msgstr "Возраст\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:387
 #: S:/github/ttscmd/app/src/Application.cpp:436
 msgid "Vendor\t\t: "
-msgstr ""
+msgstr "Производитель\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:388
 #: S:/github/ttscmd/app/src/Application.cpp:437
 msgid "Language\t: "
-msgstr ""
+msgstr "Язык\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:389
 #: S:/github/ttscmd/app/src/Application.cpp:438
 msgid "LangCode\t: "
-msgstr ""
+msgstr "Код языка\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:482
 msgid "From Git rev: "
-msgstr "Из версии Git:"
+msgstr "Из версии Git: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:482
 msgid " on "
@@ -155,49 +155,49 @@ msgstr "Не удалось получить CLSID для COM-сервера"
 #: S:/github/ttscmd/src/VoiceManager.cpp:186
 #: S:/github/ttscmd/src/Voices.cpp:53 S:/github/ttscmd/src/Voices.cpp:185
 msgid "Afrikaans"
-msgstr ""
+msgstr "Африканцы"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:55
 #: S:/github/ttscmd/src/VoiceManager.cpp:187
 #: S:/github/ttscmd/src/Voices.cpp:54 S:/github/ttscmd/src/Voices.cpp:186
 msgid "Albanian"
-msgstr ""
+msgstr "Албанский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:56
 #: S:/github/ttscmd/src/VoiceManager.cpp:188
 #: S:/github/ttscmd/src/Voices.cpp:55 S:/github/ttscmd/src/Voices.cpp:187
 msgid "Alsatian"
-msgstr ""
+msgstr "Эльзасский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:57
 #: S:/github/ttscmd/src/VoiceManager.cpp:189
 #: S:/github/ttscmd/src/Voices.cpp:56 S:/github/ttscmd/src/Voices.cpp:188
 msgid "Amharic"
-msgstr ""
+msgstr "Амхарский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:58
 #: S:/github/ttscmd/src/VoiceManager.cpp:190
 #: S:/github/ttscmd/src/Voices.cpp:57 S:/github/ttscmd/src/Voices.cpp:189
 msgid "Arabic"
-msgstr ""
+msgstr "Aрабский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:59
 #: S:/github/ttscmd/src/VoiceManager.cpp:191
 #: S:/github/ttscmd/src/Voices.cpp:58 S:/github/ttscmd/src/Voices.cpp:190
 msgid "Armenian"
-msgstr ""
+msgstr "Армянский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:60
 #: S:/github/ttscmd/src/VoiceManager.cpp:192
 #: S:/github/ttscmd/src/Voices.cpp:59 S:/github/ttscmd/src/Voices.cpp:191
 msgid "Assamese"
-msgstr ""
+msgstr "Ассамский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:61
 #: S:/github/ttscmd/src/VoiceManager.cpp:193
 #: S:/github/ttscmd/src/Voices.cpp:60 S:/github/ttscmd/src/Voices.cpp:192
 msgid "Azeri"
-msgstr ""
+msgstr "Азербайджанский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:62
 #: S:/github/ttscmd/src/VoiceManager.cpp:194
@@ -209,19 +209,19 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:195
 #: S:/github/ttscmd/src/Voices.cpp:62 S:/github/ttscmd/src/Voices.cpp:194
 msgid "Bashkir"
-msgstr ""
+msgstr "Башкирский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:64
 #: S:/github/ttscmd/src/VoiceManager.cpp:196
 #: S:/github/ttscmd/src/Voices.cpp:63 S:/github/ttscmd/src/Voices.cpp:195
 msgid "Basque"
-msgstr ""
+msgstr "Баскский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:65
 #: S:/github/ttscmd/src/VoiceManager.cpp:197
 #: S:/github/ttscmd/src/Voices.cpp:64 S:/github/ttscmd/src/Voices.cpp:196
 msgid "Belarussian"
-msgstr ""
+msgstr "Белорусский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:66
 #: S:/github/ttscmd/src/VoiceManager.cpp:198
@@ -323,7 +323,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:214
 #: S:/github/ttscmd/src/Voices.cpp:81 S:/github/ttscmd/src/Voices.cpp:213
 msgid "English"
-msgstr ""
+msgstr "Aнглийский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:83
 #: S:/github/ttscmd/src/VoiceManager.cpp:215
@@ -353,7 +353,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:219
 #: S:/github/ttscmd/src/Voices.cpp:86 S:/github/ttscmd/src/Voices.cpp:218
 msgid "French"
-msgstr ""
+msgstr "Французский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:88
 #: S:/github/ttscmd/src/VoiceManager.cpp:220
@@ -383,7 +383,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:224
 #: S:/github/ttscmd/src/Voices.cpp:91 S:/github/ttscmd/src/Voices.cpp:223
 msgid "Greek"
-msgstr ""
+msgstr "Греческий"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:93
 #: S:/github/ttscmd/src/VoiceManager.cpp:225
@@ -473,13 +473,13 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:239
 #: S:/github/ttscmd/src/Voices.cpp:106 S:/github/ttscmd/src/Voices.cpp:238
 msgid "Italian"
-msgstr ""
+msgstr "Итальянский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:108
 #: S:/github/ttscmd/src/VoiceManager.cpp:240
 #: S:/github/ttscmd/src/Voices.cpp:107 S:/github/ttscmd/src/Voices.cpp:239
 msgid "Japanese"
-msgstr ""
+msgstr "Японский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:109
 #: S:/github/ttscmd/src/VoiceManager.cpp:241
@@ -671,7 +671,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:272
 #: S:/github/ttscmd/src/Voices.cpp:139 S:/github/ttscmd/src/Voices.cpp:271
 msgid "Portugeuse"
-msgstr ""
+msgstr "Португальский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:141
 #: S:/github/ttscmd/src/VoiceManager.cpp:273
@@ -707,7 +707,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:278
 #: S:/github/ttscmd/src/Voices.cpp:145 S:/github/ttscmd/src/Voices.cpp:277
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:147
 #: S:/github/ttscmd/src/VoiceManager.cpp:279
@@ -773,7 +773,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:289
 #: S:/github/ttscmd/src/Voices.cpp:156 S:/github/ttscmd/src/Voices.cpp:288
 msgid "Spanish"
-msgstr ""
+msgstr "Испанский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:158
 #: S:/github/ttscmd/src/VoiceManager.cpp:290
@@ -924,21 +924,21 @@ msgstr ""
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:72
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:94
 msgid "Child"
-msgstr "ребенок"
+msgstr "Pебенок"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:73
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:105
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:74
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:106
 msgid "Teenager"
-msgstr "подросток"
+msgstr "Подросток"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:75
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:111
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:76
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:112
 msgid "Adult"
-msgstr "для взрослых"
+msgstr "Взрослый"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:77
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:118
@@ -965,7 +965,7 @@ msgstr "малыш"
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:92
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:93
 msgid "kids"
-msgstr "Дети"
+msgstr "ребятишки"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:94
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:95
@@ -1005,7 +1005,7 @@ msgstr "подростков"
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:103
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:104
 msgid "Teen"
-msgstr "подросток"
+msgstr "Подросток"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:104
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:105
@@ -1025,7 +1025,7 @@ msgstr "для взрослых"
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:110
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:111
 msgid "adults"
-msgstr "Взрослые"
+msgstr "Пару взрослых"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:112
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:113
@@ -1069,7 +1069,7 @@ msgstr "Mужчина"
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:154
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:180
 msgid "Female"
-msgstr "женский"
+msgstr "Женщина"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:171
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:172
@@ -1105,7 +1105,7 @@ msgstr "женщины"
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:181
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:182
 msgid "Females"
-msgstr "женщины"
+msgstr "Женщины"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:182
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:183
