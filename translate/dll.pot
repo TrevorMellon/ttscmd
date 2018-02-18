@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttscmd1-1.0\n"
 "Report-Msgid-Bugs-To: t@jno.io\n"
-"POT-Creation-Date: 2018-02-17 20:33+0000\n"
+"POT-Creation-Date: 2018-02-18 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -787,6 +787,10 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:313
 #: S:/github/ttscmd/src/Voices.cpp:180 S:/github/ttscmd/src/Voices.cpp:312
 msgid "Yoruba"
+msgstr ""
+
+#: S:/github/ttscmd/src/VoiceManager.cpp:434
+msgid "Fatal Error in polling the registry: "
 msgstr ""
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:71

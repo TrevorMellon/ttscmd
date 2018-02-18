@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttscmd-1.0\n"
 "Report-Msgid-Bugs-To: t@jno.io\n"
-"POT-Creation-Date: 2018-02-17 20:32+0000\n"
+"POT-Creation-Date: 2018-02-18 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,131 +17,154 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: S:/github/ttscmd/app/src/Application.cpp:167
-#: S:/github/ttscmd/app/src/Application.cpp:177
+#: S:/github/ttscmd/app/src/Application.cpp:173
+#: S:/github/ttscmd/app/src/Application.cpp:183
 msgid "What would you like me to say?"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:170
+#: S:/github/ttscmd/app/src/Application.cpp:176
 msgid "Primary Options"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:172
+#: S:/github/ttscmd/app/src/Application.cpp:178
 msgid "Display version information"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:173
+#: S:/github/ttscmd/app/src/Application.cpp:179
 msgid "Show help information"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:175
-#: S:/github/ttscmd/app/src/Application.cpp:177
+#: S:/github/ttscmd/app/src/Application.cpp:181
+#: S:/github/ttscmd/app/src/Application.cpp:183
 msgid "Speak the following text"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:183
+#: S:/github/ttscmd/app/src/Application.cpp:189
 msgid "List Options"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:185
+#: S:/github/ttscmd/app/src/Application.cpp:191
 msgid "List voices installed on the system"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:186
+#: S:/github/ttscmd/app/src/Application.cpp:192
 msgid "Use json output"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:187
+#: S:/github/ttscmd/app/src/Application.cpp:193
 msgid "Write json to file"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:188
+#: S:/github/ttscmd/app/src/Application.cpp:194
 msgid "Use the included locale instead of system"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:193
+#: S:/github/ttscmd/app/src/Application.cpp:199
 msgid "Search Options"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:195
+#: S:/github/ttscmd/app/src/Application.cpp:201
 msgid "Based on age"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:196
+#: S:/github/ttscmd/app/src/Application.cpp:202
 msgid "Based on gender"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:197
+#: S:/github/ttscmd/app/src/Application.cpp:203
 msgid "Based on language code"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:198
+#: S:/github/ttscmd/app/src/Application.cpp:204
 msgid "Based on voice name"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:199
+#: S:/github/ttscmd/app/src/Application.cpp:205
 msgid "Based on voice vendor"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:202
+#: S:/github/ttscmd/app/src/Application.cpp:208
 msgid "Input/Output Options"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:205
+#: S:/github/ttscmd/app/src/Application.cpp:211
 msgid "Write to wav file instead of speakers"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:236
+#: S:/github/ttscmd/app/src/Application.cpp:243
 msgid "locale"
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:384
-#: S:/github/ttscmd/app/src/Application.cpp:433
+#: S:/github/ttscmd/app/src/Application.cpp:392
+#: S:/github/ttscmd/app/src/Application.cpp:447
+#: S:/github/ttscmd/app/src/Application.cpp:462
 msgid "Voice\t\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:385
-#: S:/github/ttscmd/app/src/Application.cpp:434
+#: S:/github/ttscmd/app/src/Application.cpp:393
+#: S:/github/ttscmd/app/src/Application.cpp:449
+#: S:/github/ttscmd/app/src/Application.cpp:463
 msgid "Gender\t\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:386
-#: S:/github/ttscmd/app/src/Application.cpp:435
+#: S:/github/ttscmd/app/src/Application.cpp:394
+#: S:/github/ttscmd/app/src/Application.cpp:451
+#: S:/github/ttscmd/app/src/Application.cpp:464
 msgid "Age\t\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:387
-#: S:/github/ttscmd/app/src/Application.cpp:436
+#: S:/github/ttscmd/app/src/Application.cpp:395
+#: S:/github/ttscmd/app/src/Application.cpp:453
+#: S:/github/ttscmd/app/src/Application.cpp:465
 msgid "Vendor\t\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:388
-#: S:/github/ttscmd/app/src/Application.cpp:437
+#: S:/github/ttscmd/app/src/Application.cpp:396
+#: S:/github/ttscmd/app/src/Application.cpp:455
+#: S:/github/ttscmd/app/src/Application.cpp:466
 msgid "Language\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:389
-#: S:/github/ttscmd/app/src/Application.cpp:438
+#: S:/github/ttscmd/app/src/Application.cpp:397
+#: S:/github/ttscmd/app/src/Application.cpp:457
+#: S:/github/ttscmd/app/src/Application.cpp:467
 msgid "LangCode\t: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:482
+#: S:/github/ttscmd/app/src/Application.cpp:531
+#: S:/github/ttscmd/app/src/Application.cpp:548
 msgid "From Git rev: "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:482
+#: S:/github/ttscmd/app/src/Application.cpp:532
+#: S:/github/ttscmd/app/src/Application.cpp:548
 msgid " on "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:482
+#: S:/github/ttscmd/app/src/Application.cpp:534
+#: S:/github/ttscmd/app/src/Application.cpp:548
 msgid " branch."
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:483
+#: S:/github/ttscmd/app/src/Application.cpp:535
+#: S:/github/ttscmd/app/src/Application.cpp:549
 msgid "Version : "
 msgstr ""
 
-#: S:/github/ttscmd/app/src/Application.cpp:510
+#: S:/github/ttscmd/app/src/Application.cpp:537
+msgid " (Unicode)"
+msgstr ""
+
+#: S:/github/ttscmd/app/src/Application.cpp:540
+#: S:/github/ttscmd/app/src/Application.cpp:554
+msgid "Locale:"
+msgstr ""
+
+#: S:/github/ttscmd/app/src/Application.cpp:551
+msgid " (Ansi)"
+msgstr ""
+
+#: S:/github/ttscmd/app/src/Application.cpp:580
 msgid "Failed to start COM server"
 msgstr ""
 
@@ -915,6 +938,10 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:313
 #: S:/github/ttscmd/src/Voices.cpp:180 S:/github/ttscmd/src/Voices.cpp:312
 msgid "Yoruba"
+msgstr ""
+
+#: S:/github/ttscmd/src/VoiceManager.cpp:434
+msgid "Fatal Error in polling the registry: "
 msgstr ""
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:71
