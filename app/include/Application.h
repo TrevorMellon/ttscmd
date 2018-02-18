@@ -38,7 +38,7 @@ private:
 	char **_argv;
 #endif
 	std::locale _sysloc;
-	std::string _localepath;
+	io_jno::tts::string _localepath;
 
 	boost::program_options::options_description *_allopts;
 	boost::program_options::variables_map _vm;

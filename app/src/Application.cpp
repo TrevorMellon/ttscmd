@@ -23,6 +23,7 @@
 namespace lo = boost::locale;
 namespace po = boost::program_options;
 namespace fs = boost::filesystem;
+namespace conv = boost::locale::conv;
 
 using namespace io_jno;
 
@@ -44,7 +45,22 @@ Application::Application(int argc, TCHAR** argv)
 
 	_allopts = nullptr;
 
+	TCHAR *tempfilename = new TCHAR[MAX_PATH];
+	GetModuleFileName(NULL, tempfilename, MAX_PATH);
+	fs::path exepath(tempfilename);
+	delete[] tempfilename;
+	fs::path root = exepath.parent_path();
+	root = root.parent_path();
+	boost::filesystem::path p(root);
+	p += "\\share\\locale";
+
 	lo::generator gen;
+
+	gen.add_messages_path(p.string());
+	gen.add_messages_domain("ttscmd");
+
+	_localepath = p.wstring();
+	
 	_sysloc = gen("");
 	std::string locname;
 	try
@@ -59,19 +75,7 @@ Application::Application(int argc, TCHAR** argv)
 
 	std::locale::global(_sysloc);
 	std::wcout.imbue(_sysloc);
-	std::cout.imbue(_sysloc);
-
-	TCHAR *tempfilename = new TCHAR[MAX_PATH];
-	GetModuleFileName(NULL, tempfilename, MAX_PATH);
-	fs::path exepath(tempfilename);
-	delete[] tempfilename;
-	fs::path root = exepath.parent_path();
-	root = root.parent_path();
-	boost::filesystem::path p(root);
-	p += "\\share\\locale";
-
-	gen.add_messages_path(p.string());
-	gen.add_messages_domain("ttscmd");
+	//std::cout.imbue(_sysloc);
 
 	Options();
 	parseOptions();
@@ -235,12 +239,13 @@ void Application::Options()
 
 void Application::localeOption()
 {
+#if UNICODE
 	if (_vm.count(lo::translate("locale")))
 	{
 		std::string locstr = _vm["locale"].as<std::string>();
 
 #if _DEBUG
-		std::cout << "found locale: " << locstr << std::endl;
+		std::wcout << L"found locale: " << std::wstring(locstr.begin(), locstr.end()) << std::endl;
 #endif
 		lo::generator gen;
 		std::stringstream locss;
@@ -250,9 +255,10 @@ void Application::localeOption()
 
 		std::locale::global(loc);
 		std::wcout.imbue(loc);
-		std::cout.imbue(loc);
+
 		_sysloc = loc;
 	}
+#endif
 }
 
 tts::types::Voice Application::voiceOption()
@@ -403,7 +409,9 @@ tts::types::Voice Application::voiceOption()
 bool Application::listOption()
 {
 	tts::VoiceManager v;
-	
+#if UNICODE
+	std::wcout.imbue(_sysloc);
+#endif
 	if (_vm.count("list"))
 	{
 		tts::types::Voices vv = v.get();
@@ -412,7 +420,7 @@ bool Application::listOption()
 		{
 			tts::string t = v.json(vv);
 #if UNICODE
-			std::cout << boost::locale::conv::from_utf(t, _sysloc) << std::endl;
+			std::wcout << towstring(t) << std::endl;
 #else
 			std::cout << t << std::endl;
 #endif
@@ -435,13 +443,20 @@ bool Application::listOption()
 			{
 				tts::string gend = vvz.attributes.toGenderStr();
 #if UNICODE
-				std::cout << std::endl;
-				std::cout << lo::translate("Voice\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.name, _sysloc) << std::endl;
-				std::cout << lo::translate("Gender\t\t: ") << boost::locale::conv::from_utf(gend, _sysloc) << std::endl;
-				std::cout << lo::translate("Age\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.toAgeStr(), _sysloc) << std::endl;
-				std::cout << lo::translate("Vendor\t\t: ") << boost::locale::conv::from_utf(vvz.attributes.vendor, _sysloc) << std::endl;
-				std::cout << lo::translate("Language\t: ") << boost::locale::conv::from_utf(vvz.attributes.language, _sysloc) << std::endl;
-				std::cout << lo::translate("LangCode\t: ") << boost::locale::conv::from_utf(vvz.attributes.languageCode, _sysloc) << std::endl;
+				std::wcout << std::endl;
+				std::wcout << lo::translate(L"Voice\t\t: ").str();
+				std::wcout << vvz.attributes.name << std::endl;
+				std::wcout << lo::translate(L"Gender\t\t: ").str();
+				std::wcout << gend << std::endl;
+				std::wcout << lo::translate(L"Age\t\t: ").str();
+				std::wcout << vvz.attributes.toAgeStr()<< std::endl;
+				std::wcout << lo::translate(L"Vendor\t\t: ").str();
+				std::wcout << vvz.attributes.vendor << std::endl;
+				std::wcout << lo::translate(L"Language\t: ").str();
+				std::wcout << vvz.attributes.language << std::endl;
+				std::wcout << lo::translate(L"LangCode\t: ").str();
+				std::wcout << vvz.attributes.languageCode << std::endl;
+				std::wcout << std::endl;
 #else
 				std::cout << std::endl;
 				std::cout << lo::translate("Voice\t\t: ") << vvz.attributes.name << std::endl;
@@ -450,8 +465,9 @@ bool Application::listOption()
 				std::cout << lo::translate("Vendor\t\t: ") << vvz.attributes.vendor << std::endl;
 				std::cout << lo::translate("Language\t: ") << vvz.attributes.language << std::endl;
 				std::cout << lo::translate("LangCode\t: ") << vvz.attributes.languageCode << std::endl;
-#endif
 				std::cout << std::endl;
+#endif
+				
 			}
 		}
 		exit(0);
@@ -481,7 +497,17 @@ bool Application::helpOption()
 {
 	if (_vm.count("help"))
 	{
+#if UNICODE
+		std::stringstream ss;
+		ss << *(_allopts);
+		std::string oo = ss.str();
+		std::wstring woo;
+		woo = conv::to_utf<wchar_t>(oo, "UTF-8");
+		std::wcout.imbue(_sysloc);
+		std::wcout << woo << std::endl;
+#else
 		std::cout << *_allopts << std::endl;
+#endif
 		exit(0);
 	}
 	return false;
@@ -493,21 +519,50 @@ bool Application::versionOption()
 	{
 		try
 		{
+#if UNICODE
+			std::string locstr = std::use_facet<boost::locale::info>(_sysloc).name();
+
+			std::wcout.imbue(_sysloc);
+
+			std::string appname = lo::translate(TTSCMD_APPLICATION_NAME).str();
+			std::wstring wappname = std::wstring(appname.begin(), appname.end());
+
+			std::wcout << wappname << std::endl << std::endl;
+			std::wcout << lo::translate(L"From Git rev: ") << TTSCMD_GIT_COMMIT_HASH;
+			std::wcout << lo::translate(L" on ");
+			std::wcout << TTSCMD_GIT_BRANCH;
+			std::wcout << lo::translate(L" branch.") << std::endl;
+			std::wcout << lo::translate(L"Version : ") << TTSCMD_VERSION;
+
+			std::wcout << lo::translate(L" (Unicode)");
+
+			std::wcout << std::endl;
+			std::wcout << lo::translate(L"Locale:");
+			
+			std::wcout << std::wstring(locstr.begin(), locstr.end()) << std::endl;
+			std::wcout << L"Locale path: " << towstring(_localepath) << std::endl;
+			std::wcout << std::endl;
+#else
+			std::cout.imbue(_sysloc);
 			std::cout << lo::translate(TTSCMD_APPLICATION_NAME) << std::endl << std::endl;
 			std::cout << lo::translate("From Git rev: ") << TTSCMD_GIT_COMMIT_HASH << lo::translate(" on ") << TTSCMD_GIT_BRANCH << lo::translate(" branch.") << std::endl;
 			std::cout << lo::translate("Version : ") << TTSCMD_VERSION;
-#ifdef UNICODE
-			std::cout << " (Unicode)";
-#else
-			std::cout << " (Ansi)";
+
+			std::cout << lo::translate(" (Ansi)");
+
+			std::cout << std::endl;
+			std::cout << lo::translate("Locale:") << std::use_facet<boost::locale::info>(_sysloc).name() << std::endl;
+			std::cout << "Locale path: " << _localepath << std::endl;
+			std::cout << std::endl;
 #endif
-			std::cout << std::endl;
-			std::cout << "Locale:" << std::use_facet<boost::locale::info>(_sysloc).name() << std::endl;
-			std::cout << std::endl;
 		}
 		catch (std::bad_cast &e)
 		{
+#if UNICODE
+			std::wcerr << "FATAL ERROR: " << e.what() << std::endl;
+#else
 			std::cerr << "FATAL ERROR: " << e.what() << std::endl;
+#endif
 			exit(-1);
 		}
 

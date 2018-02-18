@@ -430,7 +430,11 @@ namespace io_jno{
 				}
 				catch (...)
 				{
+#if UNICODE
+					std::wcerr << lo::translate(L"Fatal Error in polling the registry: ") << std::endl;
+#else
 					std::cerr << "Fatal Error in polling the registry: " << std::endl;
+#endif
 					exit(-1);
 				}
 
@@ -571,7 +575,7 @@ namespace io_jno{
 					return v;
 				}
 
-				v.attributes.language = lo::translate(strLang);
+				v.attributes.language = strLang;
 
 				v.attributes.languageCode = val;
 
