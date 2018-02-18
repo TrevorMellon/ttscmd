@@ -80,6 +80,16 @@ else(NOT XGET)
 	file(MAKE_DIRECTORY ${LCMSG})
 	endforeach(F ${MOFILES})
 
+	SET(PP "${CMAKE_BINARY_DIR}/share/locale/fr_FR/LC_MESSAGES/")
+	FILE(MAKE_DIRECTORY ${PP})
+	FILE(COPY ${TRANSAPPOUTDIR}/fr.mo DESTINATION ${PP})
+	FILE(RENAME ${PP}/fr.mo ${PP}/ttscmd.mo)
+	
+	SET(PP "${CMAKE_BINARY_DIR}/share/locale/ru_RU/LC_MESSAGES/")
+	FILE(MAKE_DIRECTORY ${PP})
+	FILE(COPY ${TRANSAPPOUTDIR}/ru.mo DESTINATION ${PP})
+	FILE(RENAME ${PP}/ru.mo ${PP}/ttscmd.mo)
+	
 	install(DIRECTORY ${CMAKE_BINARY_DIR}/share DESTINATION "/")
 endif(NOT XGET)
 message(STATUS "")
