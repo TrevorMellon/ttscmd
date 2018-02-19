@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: t@jno.io\n"
 "POT-Creation-Date: 2018-02-17 20:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Trevor Mellon, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/trevor-mellon/teams/83331/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,170 +22,171 @@ msgstr ""
 #: S:/github/ttscmd/app/src/Application.cpp:167
 #: S:/github/ttscmd/app/src/Application.cpp:177
 msgid "What would you like me to say?"
-msgstr ""
+msgstr "Cosa vorresti che dicessi?"
 
 #: S:/github/ttscmd/app/src/Application.cpp:170
 msgid "Primary Options"
-msgstr ""
+msgstr "Opzioni primarie"
 
 #: S:/github/ttscmd/app/src/Application.cpp:172
 msgid "Display version information"
-msgstr ""
+msgstr "Visualizza le informazioni sulla versione"
 
 #: S:/github/ttscmd/app/src/Application.cpp:173
 msgid "Show help information"
-msgstr ""
+msgstr "Mostra le informazioni di aiuto"
 
 #: S:/github/ttscmd/app/src/Application.cpp:175
 #: S:/github/ttscmd/app/src/Application.cpp:177
 msgid "Speak the following text"
-msgstr ""
+msgstr "Pronuncia il seguente testo"
 
 #: S:/github/ttscmd/app/src/Application.cpp:183
 msgid "List Options"
-msgstr ""
+msgstr "Elenco opzioni"
 
 #: S:/github/ttscmd/app/src/Application.cpp:185
 msgid "List voices installed on the system"
-msgstr ""
+msgstr "Elenca le voci installate sul sistema"
 
 #: S:/github/ttscmd/app/src/Application.cpp:186
 msgid "Use json output"
-msgstr ""
+msgstr "Usa l'uscita json"
 
 #: S:/github/ttscmd/app/src/Application.cpp:187
 msgid "Write json to file"
-msgstr ""
+msgstr "Scrivi json su file"
 
 #: S:/github/ttscmd/app/src/Application.cpp:188
 msgid "Use the included locale instead of system"
 msgstr ""
+"Utilizzare le impostazioni internazionali incluse al posto del sistema"
 
 #: S:/github/ttscmd/app/src/Application.cpp:193
 msgid "Search Options"
-msgstr ""
+msgstr "Opzioni di ricerca"
 
 #: S:/github/ttscmd/app/src/Application.cpp:195
 msgid "Based on age"
-msgstr ""
+msgstr "In base all'età"
 
 #: S:/github/ttscmd/app/src/Application.cpp:196
 msgid "Based on gender"
-msgstr ""
+msgstr "Basato sul genere"
 
 #: S:/github/ttscmd/app/src/Application.cpp:197
 msgid "Based on language code"
-msgstr ""
+msgstr "Basato sul codice della lingua"
 
 #: S:/github/ttscmd/app/src/Application.cpp:198
 msgid "Based on voice name"
-msgstr ""
+msgstr "Basato sul nome della voce"
 
 #: S:/github/ttscmd/app/src/Application.cpp:199
 msgid "Based on voice vendor"
-msgstr ""
+msgstr "Basato sul venditore vocale"
 
 #: S:/github/ttscmd/app/src/Application.cpp:202
 msgid "Input/Output Options"
-msgstr ""
+msgstr "Opzioni di input / output"
 
 #: S:/github/ttscmd/app/src/Application.cpp:205
 msgid "Write to wav file instead of speakers"
-msgstr ""
+msgstr "Scrivi su file wav invece di altoparlanti"
 
 #: S:/github/ttscmd/app/src/Application.cpp:236
 msgid "locale"
-msgstr ""
+msgstr "località"
 
 #: S:/github/ttscmd/app/src/Application.cpp:384
 #: S:/github/ttscmd/app/src/Application.cpp:433
 msgid "Voice\t\t: "
-msgstr ""
+msgstr "Voce\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:385
 #: S:/github/ttscmd/app/src/Application.cpp:434
 msgid "Gender\t\t: "
-msgstr ""
+msgstr "Genere\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:386
 #: S:/github/ttscmd/app/src/Application.cpp:435
 msgid "Age\t\t: "
-msgstr ""
+msgstr "Età\t\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:387
 #: S:/github/ttscmd/app/src/Application.cpp:436
 msgid "Vendor\t\t: "
-msgstr ""
+msgstr "Venditore\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:388
 #: S:/github/ttscmd/app/src/Application.cpp:437
 msgid "Language\t: "
-msgstr ""
+msgstr "Linguaggio\t: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:389
 #: S:/github/ttscmd/app/src/Application.cpp:438
 msgid "LangCode\t: "
-msgstr ""
+msgstr "Codice della lingua : "
 
 #: S:/github/ttscmd/app/src/Application.cpp:482
 msgid "From Git rev: "
-msgstr ""
+msgstr "Dalla revisione Git: "
 
 #: S:/github/ttscmd/app/src/Application.cpp:482
 msgid " on "
-msgstr ""
+msgstr " su "
 
 #: S:/github/ttscmd/app/src/Application.cpp:482
 msgid " branch."
-msgstr ""
+msgstr " ramo."
 
 #: S:/github/ttscmd/app/src/Application.cpp:483
 msgid "Version : "
-msgstr ""
+msgstr "Versione : "
 
 #: S:/github/ttscmd/app/src/Application.cpp:510
 msgid "Failed to start COM server"
-msgstr ""
+msgstr "Impossibile avviare il server COM"
 
 #: S:/github/ttscmd/src/Speech.cpp:64
 msgid "Failed to retrieve CLSID for COM server"
-msgstr ""
+msgstr "Impossibile recuperare CLSID per il server COM"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:54
 #: S:/github/ttscmd/src/VoiceManager.cpp:186
 #: S:/github/ttscmd/src/Voices.cpp:53 S:/github/ttscmd/src/Voices.cpp:185
 msgid "Afrikaans"
-msgstr ""
+msgstr "Afrikaans"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:55
 #: S:/github/ttscmd/src/VoiceManager.cpp:187
 #: S:/github/ttscmd/src/Voices.cpp:54 S:/github/ttscmd/src/Voices.cpp:186
 msgid "Albanian"
-msgstr ""
+msgstr "Albanese"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:56
 #: S:/github/ttscmd/src/VoiceManager.cpp:188
 #: S:/github/ttscmd/src/Voices.cpp:55 S:/github/ttscmd/src/Voices.cpp:187
 msgid "Alsatian"
-msgstr ""
+msgstr "Alsaziana"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:57
 #: S:/github/ttscmd/src/VoiceManager.cpp:189
 #: S:/github/ttscmd/src/Voices.cpp:56 S:/github/ttscmd/src/Voices.cpp:188
 msgid "Amharic"
-msgstr ""
+msgstr "Amarica"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:58
 #: S:/github/ttscmd/src/VoiceManager.cpp:190
 #: S:/github/ttscmd/src/Voices.cpp:57 S:/github/ttscmd/src/Voices.cpp:189
 msgid "Arabic"
-msgstr ""
+msgstr "Araba"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:59
 #: S:/github/ttscmd/src/VoiceManager.cpp:191
 #: S:/github/ttscmd/src/Voices.cpp:58 S:/github/ttscmd/src/Voices.cpp:190
 msgid "Armenian"
-msgstr ""
+msgstr "Armena"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:60
 #: S:/github/ttscmd/src/VoiceManager.cpp:192
@@ -322,7 +324,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:214
 #: S:/github/ttscmd/src/Voices.cpp:81 S:/github/ttscmd/src/Voices.cpp:213
 msgid "English"
-msgstr ""
+msgstr "Inglese"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:83
 #: S:/github/ttscmd/src/VoiceManager.cpp:215
@@ -352,7 +354,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:219
 #: S:/github/ttscmd/src/Voices.cpp:86 S:/github/ttscmd/src/Voices.cpp:218
 msgid "French"
-msgstr ""
+msgstr "Francese"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:88
 #: S:/github/ttscmd/src/VoiceManager.cpp:220
@@ -376,13 +378,13 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:223
 #: S:/github/ttscmd/src/Voices.cpp:90 S:/github/ttscmd/src/Voices.cpp:222
 msgid "German"
-msgstr ""
+msgstr "Tedesca"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:92
 #: S:/github/ttscmd/src/VoiceManager.cpp:224
 #: S:/github/ttscmd/src/Voices.cpp:91 S:/github/ttscmd/src/Voices.cpp:223
 msgid "Greek"
-msgstr ""
+msgstr "Greca"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:93
 #: S:/github/ttscmd/src/VoiceManager.cpp:225
@@ -472,7 +474,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:239
 #: S:/github/ttscmd/src/Voices.cpp:106 S:/github/ttscmd/src/Voices.cpp:238
 msgid "Italian"
-msgstr ""
+msgstr "Italiana"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:108
 #: S:/github/ttscmd/src/VoiceManager.cpp:240
@@ -706,7 +708,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:278
 #: S:/github/ttscmd/src/Voices.cpp:145 S:/github/ttscmd/src/Voices.cpp:277
 msgid "Russian"
-msgstr ""
+msgstr "Russa"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:147
 #: S:/github/ttscmd/src/VoiceManager.cpp:279
@@ -772,7 +774,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:289
 #: S:/github/ttscmd/src/Voices.cpp:156 S:/github/ttscmd/src/Voices.cpp:288
 msgid "Spanish"
-msgstr ""
+msgstr "Spagnola"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:158
 #: S:/github/ttscmd/src/VoiceManager.cpp:290
@@ -923,191 +925,191 @@ msgstr ""
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:72
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:94
 msgid "Child"
-msgstr ""
+msgstr "Bambino"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:73
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:105
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:74
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:106
 msgid "Teenager"
-msgstr ""
+msgstr "Adolescente"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:75
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:111
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:76
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:112
 msgid "Adult"
-msgstr ""
+msgstr "Adulto"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:77
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:118
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:78
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:119
 msgid "Senior"
-msgstr ""
+msgstr "Anziano"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:89
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:90
 msgid "child"
-msgstr ""
+msgstr "bambino"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:90
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:91
 msgid "children"
-msgstr ""
+msgstr "bambini"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:91
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:92
 msgid "kid"
-msgstr ""
+msgstr "bimbo"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:92
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:93
 msgid "kids"
-msgstr ""
+msgstr "bambini"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:94
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:95
 msgid "Children"
-msgstr ""
+msgstr "Bambini"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:95
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:96
 msgid "Kid"
-msgstr ""
+msgstr "Bimbo"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:96
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:97
 msgid "Kids"
-msgstr ""
+msgstr "Bambini"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:99
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:100
 msgid "teen"
-msgstr ""
+msgstr "adolescente"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:100
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:101
 msgid "teens"
-msgstr ""
+msgstr "adolescenti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:101
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:102
 msgid "teenager"
-msgstr ""
+msgstr "adolescente"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:102
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:103
 msgid "teenagers"
-msgstr ""
+msgstr "adolescenti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:103
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:104
 msgid "Teen"
-msgstr ""
+msgstr "Adolescente"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:104
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:105
 msgid "Teens"
-msgstr ""
+msgstr "Adolescenti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:106
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:107
 msgid "Teenagers"
-msgstr ""
+msgstr "Adolescenti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:109
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:110
 msgid "adult"
-msgstr ""
+msgstr "adulto"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:110
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:111
 msgid "adults"
-msgstr ""
+msgstr "adulti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:112
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:113
 msgid "Adults"
-msgstr ""
+msgstr "Adulti"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:115
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:116
 msgid "senior"
-msgstr ""
+msgstr "anziano"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:116
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:117
 msgid "seniors"
-msgstr ""
+msgstr "gli anziani"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:117
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:118
 msgid "old"
-msgstr ""
+msgstr "anziano"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:119
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:120
 msgid "Seniors"
-msgstr ""
+msgstr "Anziani"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:120
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:121
 msgid "Old"
-msgstr ""
+msgstr "Anziano"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:148
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:172
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:149
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:173
 msgid "Male"
-msgstr ""
+msgstr "Maschio"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:153
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:179
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:154
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:180
 msgid "Female"
-msgstr ""
+msgstr "Femmina"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:171
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:172
 msgid "male"
-msgstr ""
+msgstr "maschio"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:173
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:174
 msgid "males"
-msgstr ""
+msgstr "maschi"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:174
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:175
 msgid "Males"
-msgstr ""
+msgstr "Maschi"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:175
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:176
 msgctxt "gender"
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:178
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:179
 msgid "female"
-msgstr ""
+msgstr "femmina"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:180
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:181
 msgid "females"
-msgstr ""
+msgstr "femmine"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:181
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:182
 msgid "Females"
-msgstr ""
+msgstr "Femmine"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:182
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:183
 msgctxt "gender"
 msgid "f"
-msgstr ""
+msgstr "f"
