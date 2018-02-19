@@ -7,6 +7,6 @@
 ### Portuguese - Brazil
 * Diego Forlin
 ### Spanish
-* Diego Forlin
+* Paula Pagnutti
 ### French
 * Trevor Mellon
