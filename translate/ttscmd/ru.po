@@ -203,7 +203,7 @@ msgstr "Азербайджанский"
 #: S:/github/ttscmd/src/VoiceManager.cpp:194
 #: S:/github/ttscmd/src/Voices.cpp:61 S:/github/ttscmd/src/Voices.cpp:193
 msgid "Bangla"
-msgstr ""
+msgstr "Bangla"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:63
 #: S:/github/ttscmd/src/VoiceManager.cpp:195
@@ -227,97 +227,97 @@ msgstr "Белорусский"
 #: S:/github/ttscmd/src/VoiceManager.cpp:198
 #: S:/github/ttscmd/src/Voices.cpp:65 S:/github/ttscmd/src/Voices.cpp:197
 msgid "Bosnian"
-msgstr ""
+msgstr "Боснийский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:67
 #: S:/github/ttscmd/src/VoiceManager.cpp:199
 #: S:/github/ttscmd/src/Voices.cpp:66 S:/github/ttscmd/src/Voices.cpp:198
 msgid "Breton"
-msgstr ""
+msgstr "Бретонский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:68
 #: S:/github/ttscmd/src/VoiceManager.cpp:200
 #: S:/github/ttscmd/src/Voices.cpp:67 S:/github/ttscmd/src/Voices.cpp:199
 msgid "Bulgarian"
-msgstr ""
+msgstr "Болгарский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:69
 #: S:/github/ttscmd/src/VoiceManager.cpp:201
 #: S:/github/ttscmd/src/Voices.cpp:68 S:/github/ttscmd/src/Voices.cpp:200
 msgid "Kurdish Central"
-msgstr ""
+msgstr "Курдский Центральный"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:70
 #: S:/github/ttscmd/src/VoiceManager.cpp:202
 #: S:/github/ttscmd/src/Voices.cpp:69 S:/github/ttscmd/src/Voices.cpp:201
 msgid "Cherokee"
-msgstr ""
+msgstr "Чероки"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:71
 #: S:/github/ttscmd/src/VoiceManager.cpp:203
 #: S:/github/ttscmd/src/Voices.cpp:70 S:/github/ttscmd/src/Voices.cpp:202
 msgid "Catalan"
-msgstr ""
+msgstr "Каталонский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:72
 #: S:/github/ttscmd/src/VoiceManager.cpp:204
 #: S:/github/ttscmd/src/Voices.cpp:71 S:/github/ttscmd/src/Voices.cpp:203
 msgid "Chinese"
-msgstr ""
+msgstr "Китайский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:73
 #: S:/github/ttscmd/src/VoiceManager.cpp:205
 #: S:/github/ttscmd/src/Voices.cpp:72 S:/github/ttscmd/src/Voices.cpp:204
 msgid "Chinese Simplified"
-msgstr ""
+msgstr "Китайский упрощенный"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:74
 #: S:/github/ttscmd/src/VoiceManager.cpp:206
 #: S:/github/ttscmd/src/Voices.cpp:73 S:/github/ttscmd/src/Voices.cpp:205
 msgid "Chinese Traditional"
-msgstr ""
+msgstr "Китайский традиционный"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:75
 #: S:/github/ttscmd/src/VoiceManager.cpp:207
 #: S:/github/ttscmd/src/Voices.cpp:74 S:/github/ttscmd/src/Voices.cpp:206
 msgid "Corsican"
-msgstr ""
+msgstr "Корсиканец"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:76
 #: S:/github/ttscmd/src/VoiceManager.cpp:208
 #: S:/github/ttscmd/src/Voices.cpp:75 S:/github/ttscmd/src/Voices.cpp:207
 msgid "Croatian"
-msgstr ""
+msgstr "Xорватский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:77
 #: S:/github/ttscmd/src/VoiceManager.cpp:209
 #: S:/github/ttscmd/src/Voices.cpp:76 S:/github/ttscmd/src/Voices.cpp:208
 msgid "Czech"
-msgstr ""
+msgstr "Чешский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:78
 #: S:/github/ttscmd/src/VoiceManager.cpp:210
 #: S:/github/ttscmd/src/Voices.cpp:77 S:/github/ttscmd/src/Voices.cpp:209
 msgid "Danish"
-msgstr ""
+msgstr "Датский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:79
 #: S:/github/ttscmd/src/VoiceManager.cpp:211
 #: S:/github/ttscmd/src/Voices.cpp:78 S:/github/ttscmd/src/Voices.cpp:210
 msgid "Dari"
-msgstr ""
+msgstr "Дари"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:80
 #: S:/github/ttscmd/src/VoiceManager.cpp:212
 #: S:/github/ttscmd/src/Voices.cpp:79 S:/github/ttscmd/src/Voices.cpp:211
 msgid "Divehi"
-msgstr ""
+msgstr "Мальдивский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:81
 #: S:/github/ttscmd/src/VoiceManager.cpp:213
 #: S:/github/ttscmd/src/Voices.cpp:80 S:/github/ttscmd/src/Voices.cpp:212
 msgid "Dutch"
-msgstr ""
+msgstr "Голландский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:82
 #: S:/github/ttscmd/src/VoiceManager.cpp:214
@@ -329,25 +329,25 @@ msgstr "Aнглийский"
 #: S:/github/ttscmd/src/VoiceManager.cpp:215
 #: S:/github/ttscmd/src/Voices.cpp:82 S:/github/ttscmd/src/Voices.cpp:214
 msgid "Estonian"
-msgstr ""
+msgstr "Эстонский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:84
 #: S:/github/ttscmd/src/VoiceManager.cpp:216
 #: S:/github/ttscmd/src/Voices.cpp:83 S:/github/ttscmd/src/Voices.cpp:215
 msgid "Faeroese"
-msgstr ""
+msgstr "Фарерский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:85
 #: S:/github/ttscmd/src/VoiceManager.cpp:217
 #: S:/github/ttscmd/src/Voices.cpp:84 S:/github/ttscmd/src/Voices.cpp:216
 msgid "Filipino"
-msgstr ""
+msgstr "Филиппинский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:86
 #: S:/github/ttscmd/src/VoiceManager.cpp:218
 #: S:/github/ttscmd/src/Voices.cpp:85 S:/github/ttscmd/src/Voices.cpp:217
 msgid "Finnish"
-msgstr ""
+msgstr "Финский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:87
 #: S:/github/ttscmd/src/VoiceManager.cpp:219
@@ -359,25 +359,25 @@ msgstr "Французский"
 #: S:/github/ttscmd/src/VoiceManager.cpp:220
 #: S:/github/ttscmd/src/Voices.cpp:87 S:/github/ttscmd/src/Voices.cpp:219
 msgid "Frisian"
-msgstr ""
+msgstr "Фризский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:89
 #: S:/github/ttscmd/src/VoiceManager.cpp:221
 #: S:/github/ttscmd/src/Voices.cpp:88 S:/github/ttscmd/src/Voices.cpp:220
 msgid "Galacian"
-msgstr ""
+msgstr "Галицкая"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:90
 #: S:/github/ttscmd/src/VoiceManager.cpp:222
 #: S:/github/ttscmd/src/Voices.cpp:89 S:/github/ttscmd/src/Voices.cpp:221
 msgid "Georgian"
-msgstr ""
+msgstr "Грузинский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:91
 #: S:/github/ttscmd/src/VoiceManager.cpp:223
 #: S:/github/ttscmd/src/Voices.cpp:90 S:/github/ttscmd/src/Voices.cpp:222
 msgid "German"
-msgstr ""
+msgstr "Немецкий"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:92
 #: S:/github/ttscmd/src/VoiceManager.cpp:224
@@ -389,37 +389,37 @@ msgstr "Греческий"
 #: S:/github/ttscmd/src/VoiceManager.cpp:225
 #: S:/github/ttscmd/src/Voices.cpp:92 S:/github/ttscmd/src/Voices.cpp:224
 msgid "Greenlandic"
-msgstr ""
+msgstr "Гренландский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:94
 #: S:/github/ttscmd/src/VoiceManager.cpp:226
 #: S:/github/ttscmd/src/Voices.cpp:93 S:/github/ttscmd/src/Voices.cpp:225
 msgid "Gujarati"
-msgstr ""
+msgstr "Гуджарати"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:95
 #: S:/github/ttscmd/src/VoiceManager.cpp:227
 #: S:/github/ttscmd/src/Voices.cpp:94 S:/github/ttscmd/src/Voices.cpp:226
 msgid "Hausa"
-msgstr ""
+msgstr "Xауса"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:96
 #: S:/github/ttscmd/src/VoiceManager.cpp:228
 #: S:/github/ttscmd/src/Voices.cpp:95 S:/github/ttscmd/src/Voices.cpp:227
 msgid "Hawaiian"
-msgstr ""
+msgstr "Гавайский"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:97
 #: S:/github/ttscmd/src/VoiceManager.cpp:229
 #: S:/github/ttscmd/src/Voices.cpp:96 S:/github/ttscmd/src/Voices.cpp:228
 msgid "Hebrew"
-msgstr ""
+msgstr "Иврит"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:98
 #: S:/github/ttscmd/src/VoiceManager.cpp:230
 #: S:/github/ttscmd/src/Voices.cpp:97 S:/github/ttscmd/src/Voices.cpp:229
 msgid "Hindi"
-msgstr ""
+msgstr "Xинди"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:99
 #: S:/github/ttscmd/src/VoiceManager.cpp:231
@@ -455,7 +455,7 @@ msgstr ""
 #: S:/github/ttscmd/src/VoiceManager.cpp:236
 #: S:/github/ttscmd/src/Voices.cpp:103 S:/github/ttscmd/src/Voices.cpp:235
 msgid "Irish"
-msgstr ""
+msgstr "Ирландцы"
 
 #: S:/github/ttscmd/src/VoiceManager.cpp:105
 #: S:/github/ttscmd/src/VoiceManager.cpp:237
@@ -1025,7 +1025,7 @@ msgstr "для взрослых"
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:110
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:111
 msgid "adults"
-msgstr "Пару взрослых"
+msgstr "пару взрослых"
 
 #: S:/github/ttscmd/include/io_jno/tts/Types.h:112
 #: S:/github/ttscmd/include/io_jno/tts/Voices.h:113
