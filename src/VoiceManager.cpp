@@ -575,7 +575,7 @@ namespace io_jno{
 					return v;
 				}
 
-				v.attributes.language = strLang;
+				v.attributes.language = lo::translate(strLang);
 
 				v.attributes.languageCode = val;
 
