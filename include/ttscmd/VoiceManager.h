@@ -16,9 +16,9 @@
 #include <string>
 #include <vector>
 
-#include <io_jno/tts/Export.h>
-#include <io_jno/tts/Unicode.h>
-#include <io_jno/tts/Types.h>
+#include <ttscmd/Export.h>
+#include <ttscmd/Unicode.h>
+#include <ttscmd/Types.h>
 
 #include <boost/locale.hpp>
 

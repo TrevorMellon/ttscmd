@@ -8,8 +8,8 @@
 *                                                    *
 ******************************************************/
 
-#include <io_jno/tts/Speech.h>
-#include <io_jno/tts/Types.h>
+#include <ttscmd/Speech.h>
+#include <ttscmd/Types.h>
 
 #include <sapi.h>
 #include <sphelper.h>

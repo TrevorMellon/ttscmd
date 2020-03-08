@@ -5,13 +5,13 @@ SET( srcs
 )
 
 SET( inc 
-	${PROJECT_SOURCE_DIR}/include/io_jno/tts/VoiceManager.h
-	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Speech.h
-	${PROJECT_SOURCE_DIR}/include/io_jno/tts/Types.h
+	${PROJECT_SOURCE_DIR}/include/ttscmd/VoiceManager.h
+	${PROJECT_SOURCE_DIR}/include/ttscmd/Speech.h
+	${PROJECT_SOURCE_DIR}/include/ttscmd/Types.h
 )
 
 
-SET(Boost_USE_STATIC_LIBS   ON)
+SET(Boost_USE_STATIC_LIBS   OFF)
 
 if(BUILD_WITH_MT)
 	SET(Boost_USE_MULTITHREADED OFF)

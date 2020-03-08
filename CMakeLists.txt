@@ -11,8 +11,10 @@
 
 
 cmake_minimum_required (VERSION 2.8)
-set( VENDOR jno.io )
+
 project (ttscmd)
+
+add_definitions(-DBOOST_ALL_NO_LIB)
 
 option(BUILD_UNICODE ON)
 option(BUILD_DLL OFF)

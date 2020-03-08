@@ -4,7 +4,7 @@ message(STATUS "${APPCMDU} (Unicode)")
 include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${PROJECT_SOURCE_DIR}/app/include)
 
-SET(Boost_USE_STATIC_LIBS   ON)
+SET(Boost_USE_STATIC_LIBS   OFF)
 find_package(Boost COMPONENTS program_options locale system thread filesystem)
 find_package(ICU OPTIONAL_COMPONENTS uc data i18n)
 

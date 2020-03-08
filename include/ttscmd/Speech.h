@@ -13,8 +13,8 @@
 
 #include <string>
 
-#include <io_jno/tts/Types.h>
-#include <io_jno/tts/Export.h>
+#include <ttscmd/Types.h>
+#include <ttscmd/Export.h>
 
 namespace io_jno
 {

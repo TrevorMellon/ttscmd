@@ -16,7 +16,7 @@
 
 #include <boost/locale.hpp>
 
-#include <io_jno/tts/Unicode.h>
+#include <ttscmd/Unicode.h>
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>

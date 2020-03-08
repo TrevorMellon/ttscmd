@@ -9,9 +9,9 @@
 ******************************************************/
 
 
-#include <io_jno/tts/VoiceManager.h>
-#include <io_jno/tts/Version.h>
-#include <io_jno/tts/Types.h>
+#include <ttscmd/VoiceManager.h>
+#include <ttscmd/Version.h>
+#include <ttscmd/Types.h>
 
 #include <windows.h>
 #include <tchar.h>
@@ -21,6 +21,10 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/locale.hpp>
 #endif
+
+#include <locale>
+
+
 
 #ifndef FUZZY_SPLIT
 # ifdef UNICODE 

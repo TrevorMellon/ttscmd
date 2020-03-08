@@ -14,3 +14,5 @@ install(TARGETS ${LIBU}
 	RUNTIME DESTINATION bin/
 	ARCHIVE DESTINATION lib/
 )
+
+target_link_libraries(${LIBU} ${Boost_LIBRARIES})
