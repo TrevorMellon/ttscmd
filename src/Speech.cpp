@@ -14,6 +14,7 @@
 #include <sapi.h>
 #include <sphelper.h>
 
+#include <locale>
 #include <boost/locale.hpp>
 
 namespace lo = boost::locale;
