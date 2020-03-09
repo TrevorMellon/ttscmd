@@ -14,6 +14,8 @@ cmake_minimum_required (VERSION 2.8)
 
 project (ttscmd)
 
+cmake_policy(SET CMP0074 NEW)
+
 option(USEUNICODE "Enable unicode version" OFF)
 
 add_definitions(-DBOOST_ALL_NO_LIB)

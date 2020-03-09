@@ -3,7 +3,7 @@ platform: x64
 
 environment:
  BOOST_ROOT: C:\Libraries\boost_1_71_0
- BOOST_LIBRARYDIR: C:\Libraries\boost_1_71_0\lib32-msvc-14.0
+ BOOST_LIBRARYDIR: C:\Libraries\boost_1_71_0\lib64-msvc-16.0
  RAPIDJSON_URL: https://github.com/Tencent/rapidjson.git
  GETTEXTURL: https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.19.8.1-v1.14/gettext0.19.8.1-iconv1.14-shared-32.zip
 
@@ -30,7 +30,7 @@ before_build:
 
 build_script:
  - cmd: cd build
- - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd -DBUILD_UNICODE=ON -DBUILD_DLL=ON ..
+ - cmd: cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=..\ttscmd -DUSEUNICODE=ON ..
  - cmd: nmake
  - cmd: nmake install
  - cmd: cd ..
