@@ -13,7 +13,7 @@ only_commits:
   message: /build/
 
 before_build:
- - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
+ - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build" x64
  - cmd: mkdir sdk
  - cmd: mkdir build
  - cmd: cd sdk
