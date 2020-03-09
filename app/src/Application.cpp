@@ -1,8 +1,8 @@
 #include <Application.h>
-#include <io_jno/tts/VoiceManager.h>
-#include <io_jno/tts/Unicode.h>
-#include <io_jno/tts/Version.h>
-#include <io_jno/tts/Speech.h>
+#include <ttscmd/VoiceManager.h>
+#include <ttscmd/Unicode.h>
+#include <ttscmd/Version.h>
+#include <ttscmd/Speech.h>
 
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>

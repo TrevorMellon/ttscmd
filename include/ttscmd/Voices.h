@@ -18,8 +18,8 @@
 #include <string>
 #include <vector>
 
-#include <io_jno/tts/Export.h>
-#include <io_jno/tts/Unicode.h>
+#include <ttscmd/Export.h>
+#include <ttscmd/Unicode.h>
 
 #include <boost/locale.hpp>
 

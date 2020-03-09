@@ -14,6 +14,8 @@ cmake_minimum_required (VERSION 2.8)
 
 project (ttscmd)
 
+option(USEUNICODE "Enable unicode version" OFF)
+
 add_definitions(-DBOOST_ALL_NO_LIB)
 
 option(BUILD_UNICODE ON)
@@ -40,7 +42,7 @@ include (cmake/git.cmake)
 
 configure_file(
   ${PROJECT_SOURCE_DIR}/template/Version.h.in
-  ${PROJECT_SOURCE_DIR}/include/io_jno/tts/Version.h
+  ${PROJECT_SOURCE_DIR}/include/ttscmd/Version.h
 )
 
 set( APPCMDA ${TTS_APP_NAME}a )
@@ -68,11 +70,37 @@ if(WIN32)
 endif(WIN32)
 
 FILE( GLOB HDRS
-	${PROJECT_SOURCE_DIR}/include/io.jno/tts/*
+	${PROJECT_SOURCE_DIR}/include/ttscmd/*
 )
 
-add_subdirectory(library)
-add_subdirectory(app)
+include(cmake/src.cmake)
+include(cmake/req.cmake)
+
+include_directories(include)
+
+if(USEUNICODE)
+	add_library(${LIBU} STATIC ${LIB_SRC})
+	add_library(${DLLU} SHARED ${LIB_SRC})
+
+	target_compile_definitions(${DLLU} PUBLIC -DTTS_BUILDING_DLL -DUNICODE -D_UNICODE)
+	target_link_libraries(${DLLU} ${LIBRARIES})
+
+	add_executable(${APPCMDU} ${APP_SOURCES})
+	target_include_directories(${APPCMDU} PUBLIC ${APPINCDIR})
+	message(STATUS "app inc dir: ${APPINCDIR}")
+	target_link_libraries(${APPCMDU} ${LIBRARIES} ${DLLU})
+else(USEUNICODE)
+	add_library(${LIBA} STATIC ${LIB_SRC})
+	add_library(${DLLA} SHARED ${LIB_SRC})
+
+	target_compile_definitions(${DLLA} PUBLIC -DTTS_BUILDING_DLL)
+	target_link_libraries(${DLLA} ${LIBRARIES})
+
+	add_executable(${APPCMDA} ${APP_SOURCES})
+	target_include_directories(${APPCMDA} PUBLIC ${APPINCDIR})
+	message(STATUS "app inc dir: ${APPINCDIR}")
+	target_link_libraries(${APPCMDA} ${LIBRARIES} ${DLLA})
+endif(USEUNICODE)
 
 include(cmake/translate.cmake)
 
