@@ -40,16 +40,3 @@ artifacts:
     name: ttscmd
     type: zip 
  
-deploy:
-  release: ttscmd-v$(appveyor_build_version)
-  description: 'TTS command line app'
-  provider: GitHub
-  auth_token:
-    secure: Xco8oPvJtHjFpMBk9cRFQ4hK/OC79n0XEuPe1O2va6Aa/v474AbcuIhrmMnPQbbc # your encrypted token from GitHub
-      
-  draft: true
-  prerelease: false
-  on:
-    branch: master                 # release from master branch only
-    appveyor_repo_tag: false        # deploy on tag push only
-
