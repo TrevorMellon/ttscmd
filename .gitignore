@@ -34,3 +34,4 @@ b/**
 build/**
 
 include/io_jno/tts/Version.h
+include/ttscmd/Version.h
