@@ -1,6 +1,5 @@
-
 SET(Boost_USE_STATIC_LIBS   OFF)
-SET(Boost_USE_MULTITHREADED ON)
+SET(Boost_USE_MULTITHREADED OFF)
 
 find_package(Boost COMPONENTS program_options locale regex system thread filesystem)
 
