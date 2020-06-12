@@ -6,14 +6,15 @@ build:
     - native
     - win10
     - vs2019
-    
   before_script:
     - cmd /c "echo mkdir tts > mybuild.bat"
     - cmd /c "echo call vs 2019 >> mybuild.bat"
     - cmd /c 'echo cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%CD%/tts . >> mybuild.bat'
     - cmd /c "echo nmake >> mybuild.bat"
     - cmd /c "echo nmake install >> mybuild.bat"
-
   script:
     - cmd /c "mybuild.bat"
+  artifacts:
+    - paths:
+        - tts/*
   
