@@ -16,7 +16,7 @@ project (ttscmd)
 
 cmake_policy(SET CMP0074 NEW)
 
-option(USEUNICODE "Enable unicode version" OFF)
+option(USEUNICODE "Enable unicode version" ON)
 
 add_definitions(-DBOOST_ALL_NO_LIB)
 
@@ -91,6 +91,12 @@ if(USEUNICODE)
 	target_include_directories(${APPCMDU} PUBLIC ${APPINCDIR})
 	message(STATUS "app inc dir: ${APPINCDIR}")
 	target_link_libraries(${APPCMDU} ${LIBRARIES} ${DLLU})
+	
+	install (TARGETS ${APPCMDU} ${DLLU} ${LIBU}
+	    RUNTIME DESTINATION bin
+	    LIBRARY DESTINATION lib
+	    ARCHIVE DESTINATION lib
+	)
 else(USEUNICODE)
 	add_library(${LIBA} STATIC ${LIB_SRC})
 	add_library(${DLLA} SHARED ${LIB_SRC})
