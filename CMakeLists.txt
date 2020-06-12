@@ -119,7 +119,7 @@ endif(USEUNICODE)
 include(cmake/translate.cmake)
 
 install(FILES ${HDRS}
-	 DESTINATION include/io.jno/tts
+	 DESTINATION include/ttscmd/
 )
 
 
