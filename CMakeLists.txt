@@ -108,6 +108,12 @@ else(USEUNICODE)
 	target_include_directories(${APPCMDA} PUBLIC ${APPINCDIR})
 	message(STATUS "app inc dir: ${APPINCDIR}")
 	target_link_libraries(${APPCMDA} ${LIBRARIES} ${DLLA})
+	
+	install (TARGETS ${APPCMDA} ${DLLA} ${LIBA}
+	    RUNTIME DESTINATION bin
+	    LIBRARY DESTINATION lib
+	    ARCHIVE DESTINATION lib
+	)
 endif(USEUNICODE)
 
 include(cmake/translate.cmake)
