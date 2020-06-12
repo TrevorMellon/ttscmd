@@ -15,6 +15,6 @@ build:
   script:
     - cmd /c "mybuild.bat"
   artifacts:
-    - paths:
-        - tts/*
+    paths:
+      - tts/*
   
